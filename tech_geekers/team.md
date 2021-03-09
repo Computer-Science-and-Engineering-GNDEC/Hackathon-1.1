@@ -1,4 +1,4 @@
- # Details of Team Members #\
+ # Details of Team Members 
  
  ## Team Leader
  
