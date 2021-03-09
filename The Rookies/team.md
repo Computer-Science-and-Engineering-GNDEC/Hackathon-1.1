@@ -7,4 +7,8 @@
 | 2 | Mehak Gupta | mehakgupta@gmail.com |1921064 | IT | Web Development and programming | [Mehak Gupta](https://github.com/mehak13) |
 | 3 | Kanav Dua | dua.kanav27@gmail.com |1915042 | CSE | Programming and Problem Solving | [Kanav Dua](https://github.com/kanavdua) | 
 
+## Mentor:
 
+| **Name** | **Email Id** |**Designation**|**Link of Git Hub Account**|
+|-------|------------|--------------|----------|
+| Hanit Karwal | it.hanit@gndec.ac.in | Assisstant Professor | ----- |
