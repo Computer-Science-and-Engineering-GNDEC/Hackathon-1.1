@@ -1,7 +1,3 @@
-## Team Leader:
-
-Kanav Dua
-
 
 ## Team Members:
 
