@@ -1,6 +1,6 @@
 ## Team Leader:
 
-Sakshi Bhumbla
+Kanav Dua
 
 
 ## Team Members:
