@@ -1,4 +1,4 @@
-## Hackathon 2.0
+## Hackathon 1.1
 
 Fork [this](https://github.com/Computer-Science-and-Engineering-GNDEC/Hackathon-2.0) repository to register yourself.
 
