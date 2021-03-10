@@ -1,12 +1,15 @@
 import React from 'react';
 import { Button } from '@material-ui/core';
-import './App.css';
+// import './App.css';
+import Landing from './components/Landing';
+import Coordinator from './components/Coordinator/Coordinator';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello</h1>
-      <Button color="primary">Hello World</Button>
+      {/* <Landing /> */}
+      <Coordinator/>
+
     </div>
   );
 }
