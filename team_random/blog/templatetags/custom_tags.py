@@ -3,10 +3,13 @@ from django.db.models import Count
 from django.utils.safestring import mark_safe
 import markdown
 from taggit.models import Tag
+import time
+from django.utils import timezone
+from datetime import datetime, timedelta
 
 register = template.Library()
 
-from ..models import Post, Contact
+from ..models import Post, Me
 
 
 @register.simple_tag
@@ -16,13 +19,13 @@ def total_posts(author):
 
 @register.filter
 def highlight_search(text, search):
-    highlighted = text.replace(search, '<span class="font-sans text-lg text-teal-500 text-center">{}</span>'.format(search))
+    highlighted = text.replace(search, '<span class="font-sans text-lg text-red-500 text-center">{}</span>'.format(search))
     return mark_safe(highlighted)
 
 
 @register.inclusion_tag('trending.html')
-def show_latest_posts(count=4):
-    trending_posts = Post.published.order_by('views')[:count]
+def show_trending_posts(count=4):
+    trending_posts = Post.published.filter(publish__gte= datetime.now(tz=timezone.utc)- timedelta(days=7)).order_by('views')[:count]
     return {'trending_posts': trending_posts}
 
 

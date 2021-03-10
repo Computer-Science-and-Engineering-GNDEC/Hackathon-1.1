@@ -19,3 +19,13 @@
 - University Roll no. : 1905078
 - Area of Interest: Web Development
 - Github : https://github.com/threedotspast
+
+## Member 3
+
+- Name     : Subham Kumar
+- Email id : ssshubhamshrivastav010@gmail.com
+- Branch   : IT Department
+- College Roll no. : 1921103
+- University Roll no. : 1905404
+- Area of Interest: Web Development
+- Github : https://github.com/subhamkumar1406

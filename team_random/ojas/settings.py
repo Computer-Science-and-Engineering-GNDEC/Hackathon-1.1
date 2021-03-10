@@ -53,6 +53,8 @@ INSTALLED_APPS = [
     'django_social_share',
     'user_visit',
     'django_user_agents',
+    'sorl.thumbnail',
+    'newsletter',
 ]
 
 MIDDLEWARE = [
@@ -142,8 +144,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 # EMAIL_HOST = 'smtp.gmail.com'
-# EMAIL_HOST_USER = 'my_account@gmail.com'
-# EMAIL_HOST_PASSWORD = 'clear'
+# EMAIL_HOST_USER = 'your_account@gmail.com'
+# EMAIL_HOST_PASSWORD = 'your_password'
 # EMAIL_PORT = 587
 # EMAIL_USE_TLS = True
 
