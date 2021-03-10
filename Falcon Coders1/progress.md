@@ -6,8 +6,4 @@
 4. 
 
 
-Note - 
 
-We can use
-issues
-part in support module of erpnext
