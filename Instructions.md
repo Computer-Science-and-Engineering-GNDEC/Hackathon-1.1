@@ -19,8 +19,8 @@
 
 
 
-- report progress every hours
-- code commits on regular basis
+- Report progress every hours
+- Code commits on regular basis
 - Running of code committed above on gne?.gndec.ac.in server
 - After about 18, hours, our team should give some task on the basis of their  progress / performance, which they need to finish.
 - This task may carry more weightage than mile stones decided by them.
