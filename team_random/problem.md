@@ -18,3 +18,6 @@ The motivation for this project is that an invigilator will able to mark attenda
 4. There would be a manual attendance option available.
 5. Examination room wise attendance list can be seen through superintendent login.
 6. In admin pannel there can be an option to upload student list for specific eamimation centre(room wise).
+
+## Document Management System
+Demonstrating implementation of Document Management System for an Engineering College
