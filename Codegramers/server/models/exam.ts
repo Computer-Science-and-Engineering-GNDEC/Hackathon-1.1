@@ -9,8 +9,8 @@ interface IExam extends mongoose.Document {
   questions: [
     {
       question: string;
-      correctAnswes: [];
-      incorrect_answers?: [];
+      correctAnswers: [];
+      incorrectAnswers?: [];
       marks: string;
     }
   ];
@@ -40,8 +40,8 @@ const examSchema = new mongoose.Schema<IExam>({
     type: [
       {
         question: String,
-        correctAnswes: [],
-        incorrect_answers: [],
+        correctAnswers: [],
+        incorrectAnswers: [],
         mark: String,
       },
     ],
@@ -52,6 +52,15 @@ const examSchema = new mongoose.Schema<IExam>({
     required: true,
     default: Date.now,
   },
+  // correctAnswers: {
+  //   type: [],
+  //   required: true,
+  // },
+  // incorrectAnswers: {
+  //   type: [],
+  //   required: true,
+  //   default: [],
+  // },
 });
 
 const Exam = mongoose.model('Exam', examSchema);

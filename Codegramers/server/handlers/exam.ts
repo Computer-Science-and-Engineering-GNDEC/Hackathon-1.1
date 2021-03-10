@@ -12,7 +12,16 @@ export async function addExam(req: Request, res: Response, next: NextFunction) {
       });
     }
 
+    questions.forEach((question: any, i: number) => {
+      if (!question.correctAnswers || !question.correctAnswers.length)
+        return next({
+          status: 400,
+          message: `invalid question format of question number ${i + 1}`,
+        });
+    });
+
     const newExam = await db.Exam.create(req.body);
+    console.log(newExam);
 
     return res.status(200).json(newExam);
   } catch (e) {
