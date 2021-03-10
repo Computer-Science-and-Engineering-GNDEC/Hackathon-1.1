@@ -25,7 +25,7 @@
     <td>IT</td>
     <td>kiratubhii@gmail.com</td>
   <th>1921036</th>
-  <th>Programming and ethical hacking</th>
+  <th>Programming and web development</th>
   <th>https://github.com/kiratubhi</th>
   
   </tr>
