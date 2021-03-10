@@ -33,7 +33,7 @@ Features Required for the proposed system:
 2. At a time live feed can contain set of 25 to 30 students to each invigilator. 
 3. Pin the live feed of the selected students.
  
-### App for Examination
+### App(Cross Platform) for Examination
 
 To Create an app for the the conduct of examination in a proctored way.
 
