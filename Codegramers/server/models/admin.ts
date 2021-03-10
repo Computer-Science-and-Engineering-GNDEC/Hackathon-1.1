@@ -2,21 +2,15 @@ import mongoose from 'mongoose';
 import bcrypt from 'bcrypt';
 
 /* Required using mongo hook with TS */
-interface IStudent extends mongoose.Document {
+interface IAdmin extends mongoose.Document {
   email: string;
   name?: string;
   password: string;
   profileImageURL?: string;
-  tests?: [
-    {
-      type: mongoose.Schema.Types.ObjectId;
-      ref: 'Test';
-    }
-  ];
   role: string;
 }
 
-const studentSchema = new mongoose.Schema<IStudent>({
+const adminSchema = new mongoose.Schema<IAdmin>({
   email: {
     type: String,
     required: true,
@@ -46,11 +40,11 @@ const studentSchema = new mongoose.Schema<IStudent>({
   role: {
     type: String,
     readonly: true,
-    default: 'students'
+    default: 'admin',
   },
 });
 
-studentSchema.pre<IStudent>('save', async function (next) {
+adminSchema.pre<IAdmin>('save', async function (next) {
   try {
     if (!this.isModified('password')) {
       return next();
@@ -66,7 +60,7 @@ studentSchema.pre<IStudent>('save', async function (next) {
   }
 });
 
-studentSchema.methods.comparePassword = async function (enteredPassword, next) {
+adminSchema.methods.comparePassword = async function (enteredPassword, next) {
   try {
     const isMatch = await bcrypt.compare(enteredPassword, this.password);
     return isMatch;
@@ -75,6 +69,6 @@ studentSchema.methods.comparePassword = async function (enteredPassword, next) {
   }
 };
 
-const Student = mongoose.model('Student', studentSchema);
+const Admin = mongoose.model('Admin', adminSchema);
 
-module.exports = Student;
+module.exports = Admin;

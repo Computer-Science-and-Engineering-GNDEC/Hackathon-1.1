@@ -2,21 +2,21 @@ import mongoose from 'mongoose';
 import bcrypt from 'bcrypt';
 
 /* Required using mongo hook with TS */
-interface IStudent extends mongoose.Document {
+interface ITeacher extends mongoose.Document {
   email: string;
   name?: string;
   password: string;
   profileImageURL?: string;
-  tests?: [
+  subjects?: [
     {
       type: mongoose.Schema.Types.ObjectId;
-      ref: 'Test';
+      ref: 'Subject';
     }
   ];
   role: string;
 }
 
-const studentSchema = new mongoose.Schema<IStudent>({
+const teacherSchema = new mongoose.Schema<ITeacher>({
   email: {
     type: String,
     required: true,
@@ -37,20 +37,20 @@ const studentSchema = new mongoose.Schema<IStudent>({
     required: true,
     default: false,
   },
-  test: [
+  subjects: [
     {
       type: mongoose.Schema.Types.ObjectId,
-      ref: 'Test',
+      ref: 'Subject',
     },
   ],
   role: {
     type: String,
     readonly: true,
-    default: 'students'
+    default: 'teacher',
   },
 });
 
-studentSchema.pre<IStudent>('save', async function (next) {
+teacherSchema.pre<ITeacher>('save', async function (next) {
   try {
     if (!this.isModified('password')) {
       return next();
@@ -66,7 +66,7 @@ studentSchema.pre<IStudent>('save', async function (next) {
   }
 });
 
-studentSchema.methods.comparePassword = async function (enteredPassword, next) {
+teacherSchema.methods.comparePassword = async function (enteredPassword, next) {
   try {
     const isMatch = await bcrypt.compare(enteredPassword, this.password);
     return isMatch;
@@ -75,6 +75,6 @@ studentSchema.methods.comparePassword = async function (enteredPassword, next) {
   }
 };
 
-const Student = mongoose.model('Student', studentSchema);
+const Teacher = mongoose.model('Teacher', teacherSchema);
 
-module.exports = Student;
+module.exports = Teacher;
