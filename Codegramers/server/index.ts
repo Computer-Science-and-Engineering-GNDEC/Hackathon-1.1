@@ -6,6 +6,7 @@ import cors from 'cors';
 import CustomError from './@types/error';
 import errorHandler from './handlers/error';
 import studentRoutes from './routes/student';
+import examRoutes from './routes/exam';
 
 const app = express();
 
@@ -14,7 +15,8 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-app.use('/user', studentRoutes);
+app.use('/v1/user', studentRoutes);
+app.use('/v1/exams', examRoutes);
 
 /* WHEN NO ROUTE SATISFY THE GIVEN CONDITION */
 app.use((req, res, next) => {

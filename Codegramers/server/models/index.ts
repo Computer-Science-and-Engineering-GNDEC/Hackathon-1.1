@@ -19,3 +19,6 @@ mongoose
   .catch(e => console.log(e));
 
 module.exports.Student = require('./student');
+module.exports.Teacher = require('./teacher');
+module.exports.Admin = require('./admin');
+module.exports.Exam = require('./exam');
