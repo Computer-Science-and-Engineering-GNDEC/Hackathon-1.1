@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+import rest_framework
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -25,7 +26,10 @@ SECRET_KEY = 'nr34p*=3aap!3j6us%@@vgdjnwe6qsnm9m@vxheb41gzq5+#0i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [ ]
+ALLOWED_HOSTS = [ 
+    'ahampriyanshu.herokuapp.com',
+    '127.0.0.1',
+]
 
 
 # Application definition
@@ -37,10 +41,18 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog',
-    'taggit',
     'django.contrib.sites',
     'django.contrib.sitemaps',
+    'rest_framework',
+    'blog',
+    'taggit',
+    'embed_video',
+    'ckeditor',
+    'crispy_forms',
+    'crispy_tailwind',
+    'django_social_share',
+    'user_visit',
+    'django_user_agents',
 ]
 
 MIDDLEWARE = [
@@ -51,9 +63,13 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'user_visit.middleware.UserVisitMiddleware',
+    'django_user_agents.middleware.UserAgentMiddleware',
 ]
 
+
 ROOT_URLCONF = 'ojas.urls'
+
 
 TEMPLATES = [
     {
@@ -65,11 +81,12 @@ TEMPLATES = [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
+                'django.contrib.messages.context_processors.messages',  
             ],
         },
     },
 ]
+
 
 WSGI_APPLICATION = 'ojas.wsgi.application'
 
@@ -103,23 +120,19 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticatedOrReadOnly',
+    )
+}
 
-# Internationalization
-# https://docs.djangoproject.com/en/3.0/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
-
-TIME_ZONE = 'Asia/Kolkata'
-
+TIME_ZONE = 'UTC'
 USE_I18N = True
-
 USE_L10N = True
-
 USE_TZ = True
 
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
@@ -128,11 +141,16 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'my_account@gmail.com'
-EMAIL_HOST_PASSWORD = 'clear'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_HOST_USER = 'my_account@gmail.com'
+# EMAIL_HOST_PASSWORD = 'clear'
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
 
 
 SITE_ID=1
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "tailwind"
+CRISPY_TEMPLATE_PACK = "tailwind"
+
+SESSION_EXPIRE_AT_BROWSER_CLOSE = False
