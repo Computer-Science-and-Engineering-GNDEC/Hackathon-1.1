@@ -1,2 +1,2 @@
 # ojas
-Progressive Web Application in Django and SQLite3.
+Blog application in Django and SQLite3
