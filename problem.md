@@ -54,7 +54,7 @@ Following Features Need to be implemented and provided
 
 ### Invigilator attendance system(PWA)
 
-The motivation for this system is that an invigilator will able to mark attandene through mobile phone. Features expexted are as follows:
+The motivation for this project is that an invigilator will able to mark attandene through mobile phone. Features expexted are as follows:
 
 1. Face recognization to mark attendance.
 2. Sheet number can be scan through QR code scanner inside that app to get sheet number.
@@ -63,5 +63,7 @@ The motivation for this system is that an invigilator will able to mark attanden
 5. Examination room wise attendance list can be seen through superintendent login.
 6. In admin pannel there can be an option to upload student list for specific eamimation centre(room wise).
 
-### 
+### Multiple Websites is ERPNext
+
+The motivation is 
 
