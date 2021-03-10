@@ -21,7 +21,7 @@ College Rollno- 1815059<br>
 Area of Interest- Data Science, Machine Learning<br>
 Link of Git repository- https://github.com/raghavbansal27 <br>
 <hr>
-Name- Vikalp Kaushik<br>
+Name- Divyanshu Garg<br>
 email id- divyanshugarg36@gmail.com<br>
 Branch- CSE<br>
 College Rollno- 1815126<br>
