@@ -31,6 +31,8 @@ It’s a 48 hours event starting on March 10, 2021 at 3PM and ending on March 12
 2. Second Prize: 15, 000/- INR
 3. Third Proize: 10, 000/- INR
 
+## [Instructions](https://computer-science-and-engineering-gndec.github.io/Hackathon-1.1/Instructions.html)
+
 
 More information will be display soon.
 
