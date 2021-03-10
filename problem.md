@@ -52,4 +52,16 @@ Following Features Need to be implemented and provided
 - Only the the services provided by exam brach will appear on the screen of device such as question papers, calcualtors, log tables, etc
 - A portal for teacher for uploading question papers and to provide other tools required for exam such as calculator.
 
+### Invigilator attendance system(PWA)
+
+The motivation for this system is that an invigilator will able to mark attandene through mobile phone. Features expexted are as follows:
+
+1. Face recognization to mark attendance.
+2. Sheet number can be scan through QR code scanner inside that app to get sheet number.
+3. Question paper number can be scan through QR code scanner inside that app to get question paper number.
+4. There would be a manual attendance option available.
+5. Examination room wise attendance list can be seen through superintendent login.
+6. In admin pannel there can be an option to upload student list for specific eamimation centre(room wise).
+
+### 
 
