@@ -1,12 +1,12 @@
-Team name: Iron Man Coding
+<em><strong>Team name: Iron Man Coding</strong></em>
 
-Team Leader:   Muskan Kaur Channa
+<strong>Team Leader:  </strong> Muskan Kaur Channa
 
-Team members:
-1. Neha Yadav
-2. Sakshi Tiwari
-3. Prabhjot Kaur
-4. Muskan Kaur Channa
+<strong>Team members:</strong>
+1. Muskan Kaur channa
+2. Prabhjot Kaur
+3. Neha Yadav
+4. Sakshi Tiwari
 
  <b>We are here to learn new skils and gain knowledage.</b>
  <br>
