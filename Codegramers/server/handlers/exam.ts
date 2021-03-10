@@ -3,9 +3,9 @@ const db = require('../models');
 
 export async function addExam(req: Request, res: Response, next: NextFunction) {
   try {
-    const { subject, maxMarks, questions, examDate } = req.body;
+    const { subject, maxMarks, questions, examDate, teacher } = req.body;
 
-    if (!subject || !maxMarks || !questions || !examDate) {
+    if (!subject || !maxMarks || !questions || !examDate || !teacher) {
       return next({
         status: 400,
         message: 'incomplete Exam Details Provided!!!',

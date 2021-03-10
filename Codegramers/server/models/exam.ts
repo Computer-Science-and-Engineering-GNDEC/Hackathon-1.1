@@ -15,6 +15,7 @@ interface IExam extends mongoose.Document {
     }
   ];
   examDate: Date;
+  teacher: string;
 }
 
 const examSchema = new mongoose.Schema<IExam>({
@@ -52,15 +53,10 @@ const examSchema = new mongoose.Schema<IExam>({
     required: true,
     default: Date.now,
   },
-  // correctAnswers: {
-  //   type: [],
-  //   required: true,
-  // },
-  // incorrectAnswers: {
-  //   type: [],
-  //   required: true,
-  //   default: [],
-  // },
+  teacher: {
+    type: mongoose.Schema.Types.ObjectId,
+    required: true,
+  },
 });
 
 const Exam = mongoose.model('Exam', examSchema);
