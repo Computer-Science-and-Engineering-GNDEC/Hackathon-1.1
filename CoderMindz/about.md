@@ -1,4 +1,4 @@
-<em><strong>Team name: Iron Man Coding</strong></em>
+<em><strong>Team name: CoderMindz</strong></em>
 
 <strong>Team Leader:  </strong> Muskan Kaur Channa
 
