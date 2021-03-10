@@ -41,15 +41,15 @@ To Create a Progressive App for the the conduct of examination in a proctored wa
 
 Following Features Need to be implemented and provided
 
-- Authentication system for making student login using LDAP by taking the following permissions from the user. 
+... Authentication system for making student login using LDAP by taking the following permissions from the user. 
  
-1. After accepting the terms and conditions user will not be able to use any application other than this app
+ After accepting the terms and conditions user will not be able to use any application other than this app
 2. He/She may not be able to close, minimize or change the size of window screen
 3. Only WiFi and mobile data can be turned on, no other options such as Bluetooth etc can be turned on.
 4. Calls and Notifications will be blocked.
   
-- After login the user will be directed to the main page where exam can be conductes.
-- Only the the services provided by exam brach will appear on the screen of device such as question papers, calcualtors, log tables, etc
-- A portal for teacher for uploading question papers and to provide other tools required for exam such as calculator.
+... After login the user will be directed to the main page where exam can be conductes.
+... Only the the services provided by exam brach will appear on the screen of device such as question papers, calcualtors, log tables, etc
+... A portal for teacher for uploading question papers and to provide other tools required for exam such as calculator.
 
 
