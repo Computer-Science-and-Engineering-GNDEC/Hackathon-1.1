@@ -5,6 +5,7 @@
     <th>Branch</th> 
     <th>email id</th>
       <th>CRN</th>  
+     <th>Area of interest</th>
       <th>Link of git repository</th> 
       
   </tr>
@@ -13,6 +14,7 @@
     <td>IT</td>
     <td>jotp908@gmail.com</td>
   <th>1921079</th>
+<th>Web development and programming</th>
   <th>https://github.com/Prabhjot410</th>
   
   </tr>
@@ -21,6 +23,7 @@
     <td>IT</td>
     <td>yadavn1710@gmail.com</td>
   <th>1921072</th>
+<th>Web development and programming</th>
   <th>https://github.com/Nehu1921072</th>
   
   </tr>
@@ -29,7 +32,8 @@
     <td>IT</td>
     <td>stiwari5264@gmail.com</td>
   <th>1921092</th>
-  <th>https://github.com/ashucivil143</th>
+<th>Web development and programming</th>
+  <th>https://github.com/sakshi1905392</th>
   
   </tr>
   <tr>
@@ -37,7 +41,8 @@
     <td>IT</td>
     <td>muskanchanna13@gmail.com</td>
   <th>1921068</th>
-  <th>https://github.com/muskanchanna</th>
+<th>Web development and programming</th>
+  <th >https://github.com/muskanchanna</th>
   
   </tr>
   <tr>
