@@ -1,1 +1,1 @@
-the teamm has an intermediate level for programming languages like c++, c, pyhton and have a basic knowledge of frontend designing
+The team has an intermediate level for programming languages like c++, c, python and have a basic knowledge of frontend designing.
