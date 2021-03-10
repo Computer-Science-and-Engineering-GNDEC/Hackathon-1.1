@@ -12,5 +12,13 @@
   "devDependencies": {
     "express": "^4.17.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "crypto": "^1.0.1",
+    "html-to-text": "^7.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "nodemailer": "^6.5.0",
+    "pug": "^3.0.2"
+  }
 }

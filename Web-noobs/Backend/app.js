@@ -5,6 +5,14 @@ const app = express();
 
 const AppError = require("./util/appError");
 const globalErrorHandler = require("./Controllers/errorController");
+const userRouter = require("./Routes/userRoutes");
+const queryRouter = require("./Routes/userRoutes");
+const viewRouter = require("./Routes/userRoutes");
+
+//Middlewares
+app.use("/", viewRouter);
+app.use("/api/v1/queries", queryRouter);
+app.use("/api/v1/users", userRouter);
 // Handling Unhandled routes
 
 app.all("*", (req, res, next) => {
