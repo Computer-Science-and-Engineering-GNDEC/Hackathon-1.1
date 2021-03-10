@@ -25,12 +25,31 @@ All demonstration shall be on Linux Server provided by college
 
 ### Live Feed from Proctoring through Moodle
 
-The Current System clicks the photograph of the student giving exam every 30 seconds and store it on the backend.
+The [Current System](https://moodle.org/plugins/quizaccess_proctoring) stores the photograph of the student appear in examination every 30 seconds and store it on the backend.
 
 Features Required for the proposed system:
 
-1. Live feed to the students giving exam in round robin fashion to the ivigilator. At a time live feed can contain set of 5-10 Students.
-2. Pin the live feed of the selected students.
+1. Live feed of students appearing exam in  the ivigilator. 
+2. At a time live feed can contain set of 25 to 30 students to each invigilator. 
+3. Pin the live feed of the selected students.
  
+### PWA for Examination
+
+To Create a Progressive App for the the conduct of examination in a proctored way.
+
+#### Features
+
+Following Features Need to be implemented and provided
+
+- Authentication system for making student login using LDAP by taking the following permissions from the user. 
+ 
+1. After accepting the terms and conditions user will not be able to use any application other than this app
+2. He/She may not be able to close, minimize or change the size of window screen
+3. Only WiFi and mobile data can be turned on, no other options such as Bluetooth etc can be turned on.
+4. Calls and Notifications will be blocked.
+  
+- After login the user will be directed to the main page where exam can be conductes.
+- Only the the services provided by exam brach will appear on the screen of device such as question papers, calcualtors, log tables, etc
+- A portal for teacher for uploading question papers and to provide other tools required for exam such as calculator.
 
 
