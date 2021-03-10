@@ -6,3 +6,4 @@
 5. HoD can also forward the query to the concerned teacher.
 6. All the queries and their solutions will not be directly posted to front page of the Helpdesk only the queries approved by HOD or admin will be posted as FAQ on help desk portal.
 7. You can use open source softwares like helpy, uvdesk,osticket, erpnext, or any of your choice.
+
