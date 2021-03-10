@@ -1,4 +1,4 @@
-# TECH GEEKERS01 #
+# TECH GEEKERS #
 
 Our team named Tech Geekers is good enough in learning new things and working collaboratively. </br>
 Our team has recently won the CIS (Code Innovation Series) Hackathon #GNDEC #GitHub #IncubateIND. </br>
