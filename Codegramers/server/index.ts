@@ -5,7 +5,7 @@ import express from 'express';
 import cors from 'cors';
 import CustomError from './@types/error';
 import errorHandler from './handlers/error';
-import { getAllStudents } from './handlers/student';
+import studentRoutes from './routes/student';
 
 const app = express();
 
@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-app.use('/user', getAllStudents);
+app.use('/user', studentRoutes);
 
 /* WHEN NO ROUTE SATISFY THE GIVEN CONDITION */
 app.use((req, res, next) => {
