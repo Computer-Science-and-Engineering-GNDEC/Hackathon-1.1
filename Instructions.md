@@ -2,7 +2,7 @@
 # Hackathon1.1
 ## March 10 - 12, 2021
 
-1. Participants are to pick their choice of problem and indicate the same to organizers at the time Hackathon starts by adding a file name problem.md in their respective directory and send PR to base repository.
+1. Participants are to pick the problem and indicate the same to organizers at the time Hackathon starts by adding a file name problem.md in their respective directory and send PR to base repository.
 2. The participants need to use free and open source platforms for providing solutions.
 3. The winners shall be adjudged by following criteria:
   - Novelty and feasibility of solution / Contribution during Hackathon and its potential.
