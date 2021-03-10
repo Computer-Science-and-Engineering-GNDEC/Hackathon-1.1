@@ -3,4 +3,4 @@
 - Mysql
 - php(lamp)
 
-# We will added sigin intrigation to our application.
+- We will added sigin intrigation to our application.
