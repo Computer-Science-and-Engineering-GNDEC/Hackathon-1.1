@@ -16,3 +16,12 @@
 9. All teams have to do a commit into their home repository within every hour. 
 10. The PR will be send to base repository after every 6 hours. 
 11. Students will be also be eveluated on the basis of their particiaption in [discussion](https://github.com/Computer-Science-and-Engineering-GNDEC/Hackathon-1.1/discussions).
+
+
+
+- report progress every hours
+- code commits on regular basis
+- Running of code committed above on gne?.gndec.ac.in server
+- After about 18, hours, our team should give some task on the basis of their  progress / performance, which they need to finish.
+- This task may carry more weightage than mile stones decided by them.
+- These need to decide milestones and they need to report progress. also in term of meeting milestones.
