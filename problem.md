@@ -1,4 +1,4 @@
-## Hackathon1.0
+## Hackathon1.1
 
 ## Problem Statements
 
@@ -74,6 +74,13 @@ The motivation is to add a feature in ERPNext so that user can create a website 
 5. Make websites of all departments using that feature.
 6. Transfer the content of departmental websites.
 
+### Document Management System
+ 
+Demonstrating implementation of Document Management System for an Engineering College
+Background information:
+https://sourceforge.net/projects/seeddms/
+https://github.com/openkm
+https://frappe.io/blog/erpnext-features/a-document-management-system-within-erpnext 
 
 
 
