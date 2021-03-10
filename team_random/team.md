@@ -7,7 +7,7 @@
 - Branch   : IT Department
 - College Roll no. : 1921127
 - University Roll no. : 1905380
-- Area of Interest: Software Engineering
+- Area of Interest: Web Developement
 - Github : https://github.com/ahampriyanshu
 
 ## Member 2
@@ -17,5 +17,5 @@
 - Branch   : EE Department
 - College Roll no. : 1916003
 - University Roll no. : 1905078
-- Area of Interest: Software Engineering
+- Area of Interest: Web Development
 - Github : https://github.com/threedotspast
