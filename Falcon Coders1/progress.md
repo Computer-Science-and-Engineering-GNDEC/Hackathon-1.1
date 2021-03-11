@@ -13,6 +13,8 @@
 Instructor
 Course
 - Company
+- Portal Settings
+- 
 
 
 
