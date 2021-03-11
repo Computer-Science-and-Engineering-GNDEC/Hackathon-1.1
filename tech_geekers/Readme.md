@@ -4,5 +4,11 @@
     <p align="center">
         <p>App(Cross Platform) for Examination</p>
     </p>
+  </div>
+  
+  ## This application requires Android Studio.
 
-## This application requires Android Studio.
+This application is built on the [Android App Framework](https://developer.android.com/), a full-stack mobile/web app framework built with Java language.
+
+- [User Guide](https://developer.android.com/)
+- [video tutorial](https://www.youtube.com/watch?v=qK0QNA0sMGc&t=2865s)
