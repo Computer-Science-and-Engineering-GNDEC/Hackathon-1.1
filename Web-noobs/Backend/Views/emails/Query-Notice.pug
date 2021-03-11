@@ -2,8 +2,8 @@ extends baseEmail
 
 block content
   p Hi #{firstName},
-  strong New Event Announcement,Register now!! 🎉🙏
-  p=`${events[0].description}`
+  strong New Query to Answer!  🎉🙏
+  p Answer the query as soon as possible!!
   table.btn.btn-primary(role='presentation', border='0', cellpadding='0', cellspacing='0')
     tbody
       tr
@@ -12,6 +12,6 @@ block content
             tbody
               tr
                 td
-                  a(href=`${url}`, target='_blank')=`${events[0].name}`
-  p If you have any query regarding CSI , please don't hesitate to contact Us!
-  p - CSI
+                  a(href=`${url}`, target='_blank')=`${queries [0].query}`
+  p If you have more queries, please don't hesitate to contact Us!
+  p - HELP-DESK GNDEC 

@@ -1,7 +1,7 @@
-const catchAsync = require("../utils/catchAsync");
-const AppError = require("../utils/appError");
-const Email = require("../utils/email");
-const User = require("../Models/userModels");
+const catchAsync = require("./../util/catchAsync");
+const AppError = require("./../util/appError");
+const Email = require("./../util/email");
+const User = require("./../Models/userModel");
 
 exports.deleteOne = (Model) =>
   catchAsync(async (req, res, next) => {
@@ -39,12 +39,12 @@ exports.createOne = (Model) =>
     const users = await User.find();
     const doc = await Model.create(req.body);
     // eslint-disable-next-line no-plusplus
-    res.status(201).json({
-      status: "success",
-      data: {
-        events: doc,
-      },
-    });
+    // res.status(201).json({
+    //   status: "success",
+    //   data: {
+    //     events: doc,
+    //   },
+    // });
     // eslint-disable-next-line no-plusplus
     for (let i = 0; i < users.length; i++) {
       const user = users[i];
@@ -63,6 +63,24 @@ exports.getOne = (Model) =>
       status: "success",
       data: {
         doc,
+      },
+    });
+  });
+
+exports.getAll = (Model) =>
+  catchAsync(async (req, res, next) => {
+    const features = new APIFeatures(Model.find(), req.query)
+      .filter()
+      .sort()
+      .limitFields()
+      .Paginate();
+    const doc = await features.query;
+
+    res.status(200).json({
+      status: "success",
+      results: doc.length,
+      data: {
+        data: doc,
       },
     });
   });

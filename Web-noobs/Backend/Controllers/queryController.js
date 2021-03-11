@@ -1,5 +1,5 @@
 const Query = require("../Models/queryModel");
-const factory = require("./handlerFactory");
+const factory = require("./handleFactory");
 
 exports.getAllQueries = factory.getAll(Query);
 exports.createQuery = factory.createOne(Query);

@@ -42,7 +42,7 @@ module.exports = class Email {
     const queries = await (await Query.find()).reverse();
     //Render html based on a pug template
     const html = pug.renderFile(
-      `${__dirname}/../views/emails/${template}.pug`,
+      `${__dirname}/../Views/emails/${template}.pug`,
       {
         firstName: this.firstName,
         url: this.url,
@@ -66,7 +66,7 @@ module.exports = class Email {
   }
 
   async sendWelcome() {
-    await this.send("Welcome", "Welcome to CSI!");
+    await this.send("Welcome", "Welcome to HELP-DESK GNDEC!");
   }
 
   async sendNotice() {
