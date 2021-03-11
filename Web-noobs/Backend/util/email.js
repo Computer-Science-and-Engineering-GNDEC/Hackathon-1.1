@@ -39,7 +39,7 @@ module.exports = class Email {
 
   //send the actual email
   async send(template, subject) {
-    const events = await (await Query.find()).reverse();
+    const queries = await (await Query.find()).reverse();
     //Render html based on a pug template
     const html = pug.renderFile(
       `${__dirname}/../views/emails/${template}.pug`,
@@ -48,7 +48,7 @@ module.exports = class Email {
         url: this.url,
         message: this.message,
         subject,
-        events,
+        queries,
       }
     );
 

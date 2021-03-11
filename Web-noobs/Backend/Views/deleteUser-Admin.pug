@@ -1,0 +1,66 @@
+extends base
+block content
+  -if (user.role === 'admin')
+    h1.headerBlue.heading-primary   
+        a.homepage(href='/').span.heading-primary--main#headName CSI-Manage-Events
+    
+    .meri-heading
+        h2.heading-secondary
+            | Delete User
+            // end .form-header section
+        .book__form
+          form.form-deleteUser(action='#')
+            .u-margin-bottom-medium
+            
+                
+            // .tagline
+            .form__group
+                input#Userid.form__input(type='text' placeholder='ID of the User to delete' required='')
+                label.form__label(for='id') User id
+            .form__group
+                button.btn.btn--green Delete User &rarr;
+
+    #popup-2.popup-2
+      .popup-2__content
+        .popup-2__left
+          img.popup-2__img(src='img/devansh.jpeg' alt='Photo')
+        .popup-2__right
+          a.popup-2__close(href='#footer') &times;
+          h2.heading-secondary.u-margin-bottom-small
+            | Devansh Bhushan
+          h3.heading-tertiary.u-margin-bottom-small
+            | Back-End Developer &ndash; Details about me
+          p.popup-2__text
+            | Student of D3/CSE 
+            br
+            |             Guru Nanak Dev Engineering College Ludhiana
+            br
+            |             Contact number &thicksim; 8556040271
+            br
+            |             Email_id &thicksim; devanshbhushan79@gmail.com
+          a.btn.btn--green(href='https://www.linkedin.com/in/devansh-bhushan-679013169' target="_blank") Linked In!
+          a.btn.btn--green(href='https://www.instagram.com/devanshbhushan1002/?hl=en' target="_blank") Instagram!
+    
+    #popup-1.popup-1
+      .popup-1__content
+        .popup-1__left
+          img.popup-1__img(src='img/saini.jpeg' alt='Photo')
+        .popup-1__right
+          a.popup-1__close(href='#footer') &times;
+          h2.heading-secondary.u-margin-bottom-small
+            | Abhishek Saini
+          h3.heading-tertiary.u-margin-bottom-small
+            | Front-End Developer &ndash; Details about me
+          p.popup-1__text
+            | Student of D3/CSE 
+            br
+            |             Guru Nanak Dev Engineering College Ludhiana
+            br
+            |             Contact number &thicksim; 9780072442
+            br
+            |             Email_id &thicksim; abisheksainisaini56@gmail.com
+          a.btn.btn--green(href='https://www.linkedin.com/in/abhishek-saini-6172b3169' target="_blank") Linked In!
+          a.btn.btn--green(href='https://www.instagram.com/saini9946/?hl=en' target="_blank") Instagram!
+  -else
+    img(src='img/no-access.jpg' alt='No Photo')
+    p No Access!

@@ -1,0 +1,102 @@
+extends base
+
+mixin navItem(link, text, icon, active)
+  li(class=`${active ? 'side-nav--active' : ''}`)
+    a(href=`${link}`)
+      svg
+        use(xlink:href=`img/icons.svg#icon-${icon}`)
+      | #{text}
+
+block content
+  main.main-account
+    .user-view-account
+      nav.user-view-account__menu
+        - if (user.role === 'admin')
+          .admin-nav-account
+            h5.admin-nav-account__heading Admin
+            ul.side-nav-account
+              +navItem('/manage-events', 'Manage events', 'map')
+              +navItem('/manage-users', 'Manage users', 'users')
+
+      .user-view-account__content
+        .user-view-account__form-container
+          h2.heading-secondary.ma-bt-md Your account settings
+          
+          //- WITHOUT API
+          //- form.form.form-user-data(action='/submit-user-data' method='POST' enctype='multipart/form-data')
+          
+          //- WITH API
+          form.form.form-user-data
+            .form__group-account
+              label.form__label-account(for='name') Name
+              input#name.form__input-account(type='text', value=`${user.name}`, required, name='name')
+            .form__group-account.ma-bt-md
+              label.form__label-account(for='email') Email address
+              input#email.form__input-account(type='email', value=`${user.email}`, required, name='email')
+            .form__group-account.form__photo
+              img.form__user-photo(src=`/img/${user.photo}`, alt='User photo')
+              input.form__upload(type='file', accept='image/*', id='photo', name='photo')
+              label#label-account(for='photo') Choose new photo
+              br
+              p (Just press the save settings button after selecting your new photo)
+              
+            .form__group-account.right
+              button.btn-account.btn--small-account.btn--green-account Save settings
+              
+        .line &nbsp;
+        
+        .user-view__form-container
+          h2.heading-secondary.ma-bt-md Password change
+          form.form.form-user-password
+            .form__group-account
+              label.form__label-account(for='password-current') Current password
+              input#password-current.form__input-account(type='password', placeholder='••••••••', required, minlength='8')
+            .form__group-account
+              label.form__label-account(for='password') New password
+              input#password.form__input-account(type='password', placeholder='••••••••', required, minlength='8')
+            .form__group-account.ma-bt-lg
+              label.form__label-account(for='password-confirm') Confirm password
+              input#password-confirm.form__input-account(type='password', placeholder='••••••••', required, minlength='8')
+            .form__group-account.right
+              button.btn-account.btn--small-account.btn--green-account.btn--save-password-account Save password
+      #popup-2.popup-2
+        .popup-2__content
+          .popup-2__left
+            img.popup-2__img(src='img/devansh.jpeg' alt='photo')
+          .popup-2__right
+            a.popup-2__close(href='#footer') &times;
+            h2.heading-secondary.u-margin-bottom-small
+              | Devansh Bhushan
+            h3.heading-tertiary.u-margin-bottom-small
+              | Back-End Developer &ndash; Details about me
+            p.popup-2__text
+              | Student of D3/CSE 
+              br
+              |             Guru Nanak Dev Engineering College Ludhiana
+              br
+              |             Contact number &thicksim; 8556040271
+              br
+              |             Email_id &thicksim; devanshbhushan79@gmail.com
+            a.btn.btn--green(href='https://www.linkedin.com/in/devansh-bhushan-679013169' target="_blank") Linked In!
+            a.btn.btn--green(href='https://www.instagram.com/devanshbhushan1002/?hl=en' target="_blank") Instagram!
+    
+    #popup-1.popup-1
+      .popup-1__content
+        .popup-1__left
+          img.popup-1__img(src='img/saini.jpeg' alt='photo')
+        .popup-1__right
+          a.popup-1__close(href='#footer') &times;
+          h2.heading-secondary.u-margin-bottom-small
+            | Abhishek Saini
+          h3.heading-tertiary.u-margin-bottom-small
+            | Front-End Developer &ndash; Details about me
+          p.popup-1__text
+            | Student of D3/CSE 
+            br
+            |             Guru Nanak Dev Engineering College Ludhiana
+            br
+            |             Contact number &thicksim; 9780072442
+            br
+            |             Email_id &thicksim; abisheksainisaini56@gmail.com
+          a.btn.btn--green(href='https://www.linkedin.com/in/abhishek-saini-6172b3169' target="_blank") Linked In!
+          a.btn.btn--green(href='https://www.instagram.com/saini9946/?hl=en' target="_blank") Instagram!

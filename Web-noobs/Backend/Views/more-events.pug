@@ -1,0 +1,72 @@
+extends base
+block content
+    h1.headerBlue.heading-primary   
+        a.homepage(href='/').span.heading-primary--main#headName All Events
+    .main    
+      section#section-tours.section-tours
+        .u-center-text.u-margin-bottom-big
+          h2.heading-secondary     
+        .row.row-more
+          -x=1
+          each event in events
+            .col-1-of-3
+              .card
+                .card__side.card__side--front
+                  .card__picture.div(class="card__picture--"+x)
+                  h4.card__heading
+                    span.card__heading-span.div(class="card__heading-span--"+x)= event.name
+                  .card__details
+                    ul
+                      li= event.duration
+                      li= event.team
+                      li= event.StartDates
+                      li= event.description
+                      li Hover on the card to Register!
+                .card__side.card__side--back.div(class="card__side--back-"+x)
+                  .card__cta
+                    .card__price-box
+                      p.card__price-only  only  
+                      p.card__price-value= event.price
+                      a.btn.btn--white(href=`${event.link}`) Register Now
+                -x=x+1
+        .u-center-text.u-margin-top-huge   
+    #popup-2.popup-2
+      .popup-2__content
+        .popup-2__left
+          img.popup-2__img(src='img/devansh.jpeg' alt='Photo')
+        .popup-2__right
+          a.popup-2__close(href='#footer') &times;
+          h2.heading-secondary.u-margin-bottom-small
+            | Devansh Bhushan
+          h3.heading-tertiary.u-margin-bottom-small
+            | Back-End Developer &ndash; Details about me
+          p.popup-2__text
+            | Student of D3/CSE 
+            br
+            |             Guru Nanak Dev Engineering College Ludhiana
+            br
+            |             Contact number &thicksim; 8556040271
+            br
+            |             Email_id &thicksim; devanshbhushan79@gmail.com
+          a.btn.btn--green(href='https://www.linkedin.com/in/devansh-bhushan-679013169' target="_blank") Linked In!
+          a.btn.btn--green(href='https://www.instagram.com/devanshbhushan1002/?hl=en' target="_blank") Instagram!
+    #popup-1.popup-1
+      .popup-1__content
+        .popup-1__left
+          img.popup-1__img(src='img/saini.jpeg' alt='Photo')
+        .popup-1__right
+          a.popup-1__close(href='#footer') &times;
+          h2.heading-secondary.u-margin-bottom-small
+            | Abhishek Saini  
+          h3.heading-tertiary.u-margin-bottom-small
+            | Front-End Developer &ndash; Details about me
+          p.popup-1__text
+            | Student of D3/CSE 
+            br
+            |             Guru Nanak Dev Engineering College Ludhiana
+            br
+            |             Contact number &thicksim; 9780072442
+            br
+            |             Email_id &thicksim; abisheksainisaini56@gmail.com
+          a.btn.btn--green(href='https://www.linkedin.com/in/abhishek-saini-6172b3169' target="_blank") Linked In!
+          a.btn.btn--green(href='https://www.instagram.com/saini9946/?hl=en' target="_blank") Instagram!
