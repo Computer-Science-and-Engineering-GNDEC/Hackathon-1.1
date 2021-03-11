@@ -14,7 +14,7 @@ Instructor
 Course
 - Company
 - Portal Settings
-- 
+- Front end finished
 
 
 
