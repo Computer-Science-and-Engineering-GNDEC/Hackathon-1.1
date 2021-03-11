@@ -153,3 +153,30 @@ exports.logout = (req, res) => {
   });
   res.status(200).json({ status: "success" });
 };
+
+//Only for rendered pages and there will be no error
+exports.isLoggedIn = async (req, res, next) => {
+  try {
+    if (req.cookies.jwt) {
+      const decoded = await promisify(jwt.verify)(
+        req.cookies.jwt,
+        process.env.JWT_SECRET
+      );
+      //check if user still exits
+      const currentUSer = await User.findById(decoded.id);
+      if (!currentUSer) {
+        return next();
+      }
+
+      //check if user changed password after the token was issued
+      if (currentUSer.changedPasswordAfter(decoded.iat)) {
+        return next();
+      }
+      res.locals.user = currentUSer;
+      return next();
+    }
+  } catch (err) {
+    return next();
+  }
+  next();
+};
