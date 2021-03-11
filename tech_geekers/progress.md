@@ -6,3 +6,6 @@
 - Terms and conditions + UI interface. 
 - Designing teacher's portal for creating proctored exams for students.
 - We have created calculator for the students. 
+- We have added on back pressed icon.
+- we have also added internet connectivity check tool.
+- Now we have added image capture button for students to upload before start examination.
