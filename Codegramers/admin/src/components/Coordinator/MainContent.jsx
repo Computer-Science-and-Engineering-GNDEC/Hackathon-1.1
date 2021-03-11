@@ -69,7 +69,7 @@ export default function FullWidthTabs(props) {
     };
 
     return (
-        <Container className={classes.root} maxWidth="xl">
+        <Container className={classes.root} maxWidth="100%">
             {renderContent()}
         </Container>
     );
