@@ -6,6 +6,7 @@ import Checkbox from '@material-ui/core/Checkbox';
 
 import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
+import { Console } from 'node:console';
 
 
 
@@ -20,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function BasicTextFields() {
   const classes = useStyles();
-  const [questions, setQuestions] = React.useState([ ])
+  const [questions, setQuestions] = React.useState([])
   const [ques, setQues] = React.useState({ question: "", optionA: "", optionB: "", optionC: "", optionD: "", Achecked: false, Bchecked: false, Cchecked: false, Dchecked: false, })
 
   const handleChange = (event) => {
@@ -48,19 +49,30 @@ export default function BasicTextFields() {
     console.log("add question")
     var correctAns = []
     var incorrectAns = []
+  
     ques.Achecked ? correctAns.push(ques.optionA) : incorrectAns.push(ques.optionA)
     ques.Bchecked ? correctAns.push(ques.optionB) : incorrectAns.push(ques.optionB)
     ques.Cchecked ? correctAns.push(ques.optionC) : incorrectAns.push(ques.optionC)
     ques.Dchecked ? correctAns.push(ques.optionD) : incorrectAns.push(ques.optionD)
     
 
-    var obj = {question:ques.question, }
+    var obj = {question:ques.question, correct:correctAns, incorrect:incorrectAns }
+    // console.log(obj)
+
+    const ques = questions;
+
+    ques.push(obj);
+
+    setQuestions(ques);
+
 
   }
 
 
 
   React.useEffect(() => { console.log(ques) }, [ques])
+  React.useEffect(() => { console.log(questions) }, [questions])
+
 
   return (
 

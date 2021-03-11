@@ -3,6 +3,7 @@ import bcrypt from 'bcrypt';
 
 /* Required using mongo hook with TS */
 interface IExam extends mongoose.Document {
+  name: string;
   subject: string;
   maxMarks: string;
   marksObtained?: string;
@@ -47,7 +48,10 @@ const examSchema = new mongoose.Schema<IExam>({
       },
     ],
   },
-
+  name: {
+    required:true,
+    type: String
+  },
   examDate: {
     type: Date,
     required: true,
