@@ -15,6 +15,7 @@ This application is built on the [Android App Framework](https://developer.andro
 
 ## Authentication system for making student login using LDAP by taking the following permissions from the user.
 ### Prerequisites:
+- Install Android Studio
 - Install OpenLDAP
 - Install Apache Server
 - Install MySql Server
