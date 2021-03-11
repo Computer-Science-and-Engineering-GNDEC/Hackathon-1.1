@@ -17,8 +17,11 @@
 
 
 ## Workflow
-- Front End about to finish
-
+- Front End finish except dashboard
+- Instructors list has been created
+- Course list has been created
+- Employee list has been created
+- 
 
 
 
