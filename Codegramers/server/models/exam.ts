@@ -57,10 +57,13 @@ const examSchema = new mongoose.Schema<IExam>({
     required: true,
     default: Date.now,
   },
-  teachers: [{
-    type: mongoose.Schema.Types.ObjectId,
-    required: true,
-  }],
+  teachers: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Teacher',
+      required: true
+    },
+  ],
 });
 
 const Exam = mongoose.model('Exam', examSchema);

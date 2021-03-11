@@ -50,6 +50,7 @@ export default function BasicTextFields() {
     setQues((prevState) => ({ ...prevState, [name]: value }))
   }
 
+
   const handleCheckboxChange = (event) => {
 
     const name = event.target.name;
@@ -103,6 +104,7 @@ export default function BasicTextFields() {
     setFinalObj((p) => ({ ...p, questions: quest }));
 
     setQues({ question: "", optionA: "", optionB: "", optionC: "", optionD: "", Achecked: false, Bchecked: false, Cchecked: false, Dchecked: false, marks: "" })
+
 
 
   }
