@@ -6,7 +6,6 @@ import Checkbox from '@material-ui/core/Checkbox';
 
 import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
-import { Console } from 'node:console';
 
 
 
@@ -22,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
 export default function BasicTextFields() {
   const classes = useStyles();
   const [questions, setQuestions] = React.useState([])
-  const [ques, setQues] = React.useState({ question: "", optionA: "", optionB: "", optionC: "", optionD: "", Achecked: false, Bchecked: false, Cchecked: false, Dchecked: false, })
+  const [ques, setQues] = React.useState({ question: "", optionA: "", optionB: "", optionC: "", optionD: "", Achecked: false, Bchecked: false, Cchecked: false, Dchecked: false, marksAlloted:""  })
 
   const handleChange = (event) => {
     const name = event.target.name;
@@ -30,6 +29,7 @@ export default function BasicTextFields() {
 
     setQues((prevState) => ({ ...prevState, [name]: value }))
   }
+
 
   const handleCheckboxChange = (event) => {
 
@@ -40,13 +40,14 @@ export default function BasicTextFields() {
   };
 
 
+
   const handleSubmit = () => {
     console.log("Submitted")
   }
 
 
+
   const handleAddQuestion = () => {
-    console.log("add question")
     var correctAns = []
     var incorrectAns = []
   
@@ -57,21 +58,24 @@ export default function BasicTextFields() {
     
 
     var obj = {question:ques.question, correct:correctAns, incorrect:incorrectAns }
-    // console.log(obj)
 
-    const ques = questions;
 
-    ques.push(obj);
+    var quest = questions;
+    console.log( "consoled from func : ", quest)
 
-    setQuestions(ques);
 
+    quest.push(obj);
+
+    console.log( "consl : ", quest )
+
+    setQuestions( () => (quest) );
 
   }
 
 
 
   React.useEffect(() => { console.log(ques) }, [ques])
-  React.useEffect(() => { console.log(questions) }, [questions])
+  React.useEffect(() => { console.log( "useEffect : ", questions) }, questions)
 
 
   return (
@@ -103,6 +107,9 @@ export default function BasicTextFields() {
           label="Option (d)"
         />
       </FormGroup>
+
+      <TextField id="standard-basic" label="Marks Alloted" name="marksAlloted" value={ques.marksAlloted} onChange={handleChange} />
+
 
 
       <Button variant="contained" color="primary" onClick={handleAddQuestion}>
