@@ -46,7 +46,7 @@ exports.signup = catchAsync(async (req, res, next) => {
   const verificationUrl = `${req.protocol}://${req.get(
     "host"
   )}/api/v1/users/verifyEmail/${newUser.emailToken}`;
-  const message = "Signup-CSI";
+  const message = "Signup-HelpDesk";
   res.status(200).json({
     status: "success",
     data: {

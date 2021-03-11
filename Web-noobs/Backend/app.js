@@ -10,6 +10,7 @@ const queryRouter = require("./Routes/userRoutes");
 const viewRouter = require("./Routes/userRoutes");
 
 //Middlewares
+app.use(express.json());
 app.use("/", viewRouter);
 app.use("/api/v1/queries", queryRouter);
 app.use("/api/v1/users", userRouter);
