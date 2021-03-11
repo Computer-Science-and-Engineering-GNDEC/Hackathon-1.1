@@ -17,7 +17,7 @@
 
 
 ## Workflow
-- Front End finish except dashboard
+- Front End finished except dashboard
 - Instructors list has been created
 - Course list has been created
 - Employee list has been created
