@@ -9,6 +9,11 @@
 - Website Sidebar
 - About Us Settings
 - Contact US Settings
+- Education
+Instructor
+Course
+- Company
+
 
 
 
