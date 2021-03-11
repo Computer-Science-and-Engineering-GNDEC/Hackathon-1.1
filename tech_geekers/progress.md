@@ -12,4 +12,6 @@
 - We have created a new button which provide a tutorial that how to block/lock notifications of mobile phone.
 - We have successfully added a ldap/phpldapadmin in local host.
 - Now we have working to connect ldap.phpldapadmin in college server.
+- We have added image capture feature in our android application.
+- we are creating a layout of our application.
 
