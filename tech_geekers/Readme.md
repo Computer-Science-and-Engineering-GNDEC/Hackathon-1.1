@@ -15,9 +15,8 @@ This application is built on the [Android App Framework](https://developer.andro
 
 ## Authentication system for making student login using LDAP by taking the following permissions from the user.
 ### Prerequisites:
-# Install OpenLDAP on Ubuntu Server 20.04LTS:
-#### In this three-part series, I’ll be walking you through the steps of:
+- Install OpenLDAP
+- Install Apache Server
+- Install MySql Server
+- install phpldapadmin
 
-- Installing OpenLDAP server.
-- Installing the web-based LDAP Account Manager.
-- Configuring Linux desktops, such that they can communicate with your LDAP server.
