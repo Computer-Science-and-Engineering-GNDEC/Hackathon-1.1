@@ -6,7 +6,15 @@ const querySchema = new mongoose.Schema({
     type: String,
     required: [true, "Please type in your query here!!"],
   },
-
+  user: {
+    type: mongoose.Schema.ObjectId,
+    ref: "User",
+    required: [true, "Review must belong to a user"],
+  },
+  title: {
+    type: String,
+    required: [true, "Please give a title to the query"],
+  },
   branch: {
     type: String,
     lowercase: true,

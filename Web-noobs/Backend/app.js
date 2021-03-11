@@ -4,6 +4,7 @@ const app = express();
 
 //Requiremnets
 const path = require("path");
+const cookieParser = require("cookie-parser");
 const AppError = require("./util/appError");
 const globalErrorHandler = require("./Controllers/errorController");
 const userRouter = require("./Routes/userRoutes");
@@ -17,6 +18,7 @@ app.use("/api/v1/queries", queryRouter);
 app.use("/api/v1/users", userRouter);
 
 app.enable("trust proxy");
+app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 app.set("view engine", "pug");
 //serving static files
