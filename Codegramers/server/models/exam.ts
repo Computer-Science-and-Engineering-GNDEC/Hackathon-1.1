@@ -3,6 +3,7 @@ import bcrypt from 'bcrypt';
 
 /* Required using mongo hook with TS */
 interface IExam extends mongoose.Document {
+  name: string;
   subject: string;
   maxMarks: string;
   marksObtained?: string;
@@ -15,7 +16,7 @@ interface IExam extends mongoose.Document {
     }
   ];
   examDate: Date;
-  teacher: string;
+  teachers: [];
 }
 
 const examSchema = new mongoose.Schema<IExam>({
@@ -47,16 +48,19 @@ const examSchema = new mongoose.Schema<IExam>({
       },
     ],
   },
-
+  name: {
+    required:true,
+    type: String
+  },
   examDate: {
     type: Date,
     required: true,
     default: Date.now,
   },
-  teacher: {
+  teachers: [{
     type: mongoose.Schema.Types.ObjectId,
     required: true,
-  },
+  }],
 });
 
 const Exam = mongoose.model('Exam', examSchema);
