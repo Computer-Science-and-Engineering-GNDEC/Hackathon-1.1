@@ -10,3 +10,6 @@
 - we have also added internet connectivity check tool.
 - Now we have added image capture button for students to upload before start examination.
 - We have created a new button which provide a tutorial that how to block/lock notifications of mobile phone.
+- We have successfully added a ldap/phpldapadmin in local host.
+- Now we have working to connect ldap.phpldapadmin in college server.
+
