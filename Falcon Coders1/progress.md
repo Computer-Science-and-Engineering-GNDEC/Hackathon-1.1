@@ -7,7 +7,7 @@
 - Website forms
 - Website Pages
 - Website Slideshow
-- Website Slidebar
+- Website Sidebar
 - About Us Settings
 - Contact US Settings
 
