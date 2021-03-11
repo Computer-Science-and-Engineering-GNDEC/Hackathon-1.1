@@ -4,3 +4,5 @@ Our team has created the skeleton of Helpdesk.
 We have discussed on the basic requirements of the Help Desk.
 Our team has created the outline of our help desk.
 We are about to finish our project. Just a finalising touch is left.
+The help desk is almos up to date.
+Colour scheme was decided
