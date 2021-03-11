@@ -1,0 +1,40 @@
+/*!
+ /       .                             .o8                     oooo
+ /    .o8                             "888                     `888
+ /  .o888oo oooo d8b oooo  oooo   .oooo888   .ooooo.   .oooo.o  888  oooo
+ /    888   `888""8P `888  `888  d88' `888  d88' `88b d88(  "8  888 .8P'
+ /    888    888      888   888  888   888  888ooo888 `"Y88b.   888888.
+ /    888 .  888      888   888  888   888  888    .o o.  )88b  888 `88b.
+ /    "888" d888b     `V88V"V8P' `Y8bod88P" `Y8bod8P' 8""888P' o888o o888o
+ /  ========================================================================
+ /  Author:     Chris Brame
+ /  Updated:    1/20/19 5:31 AM
+ /  Copyright (c) 2014-2019. All rights reserved.
+ /
+
+.mGraph .mg-histogram .axis text,
+.mGraph .mg-x-axis text,
+.mGraph .mg-y-axis text
+  font-size: 11px
+  fill: $text_color
+
+.mGraph .mg-active-datapoint
+  fill: $text_color
+  font-size: 13px
+
+.mGraph-panel
+  padding-bottom: 20px
+
+.mGraph
+  .mg-line1-color
+    stroke: $graph_path_color !important
+  .mg-area1-color
+    fill: lighten($graph_path_color, 5%) !important
+  &.graph-blue
+    .mg-line1-color
+      stroke: #1976d2
+    .mg-area1-color
+      fill: lighten(#1976d2, 10%)
+
+.mg-extended-y-ticks
+  stroke: darken($page_content_border_color, 80%) !important

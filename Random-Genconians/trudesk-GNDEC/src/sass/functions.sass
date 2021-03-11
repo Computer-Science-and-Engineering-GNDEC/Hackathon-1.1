@@ -1,0 +1,52 @@
+/*!
+ /       .                             .o8                     oooo
+ /    .o8                             "888                     `888
+ /  .o888oo oooo d8b oooo  oooo   .oooo888   .ooooo.   .oooo.o  888  oooo
+ /    888   `888""8P `888  `888  d88' `888  d88' `88b d88(  "8  888 .8P'
+ /    888    888      888   888  888   888  888ooo888 `"Y88b.   888888.
+ /    888 .  888      888   888  888   888  888    .o o.  )88b  888 `88b.
+ /    "888" d888b     `V88V"V8P' `Y8bod88P" `Y8bod8P' 8""888P' o888o o888o
+ /  ========================================================================
+ /  Author:     Chris Brame
+ /  Updated:    1/20/19 5:31 AM
+ /  Copyright (c) 2014-2019. All rights reserved.
+ /
+
+//Functions
+@function automatic-text-color($bgColor, $component:'')
+  @if (lightness($bgColor) > 50)
+    @if ($component != '' and $component == 'sidebar')
+      @return #3f444c
+    @else if ($component != '' and $component == 'muted')
+      @return #757575
+    @else
+      @return lighten($text_color, 5%)
+  @else
+    @if ($component != '' and $component == 'muted')
+      @return lighten($bgColor, 45%)
+    @else
+      @return #f7f8fa
+
+@function automatic-link-color($bgColor)
+  @if (lightness($bgColor) > 50 and lightness($accent_color) > 75)
+    @return darken($accent_color, 40%)
+  @else
+    @return lighten($accent_color, 10%)
+
+@function pre-color($bgColor)
+  @if (lightness($bgColor) > 50)
+    @return darken($bgColor, 5%)
+  @else
+    @return lighten($bgColor, 3%)
+
+@function pace-color()
+  @if ($topbar_bg == #42464d)
+    @return #ffffff
+  @else
+    @return $accent_color
+
+@function topbar-separator-color()
+  @if (lightness($topbar_bg) > 50)
+    @return darken($topbar_bg, 15%)
+  @else
+    @return lighten($topbar_bg, 15%)
