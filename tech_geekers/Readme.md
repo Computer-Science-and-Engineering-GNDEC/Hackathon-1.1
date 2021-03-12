@@ -6,6 +6,8 @@
     </p>
   </div>
   
+  For installion of this application in your device press [downlord.](https://drive.google.com/file/d/19me7HeJn5EDN8ZM3rijYkih7ekyQIsNg/view?usp=drivesdk)
+  
   ## This application requires Android Studio.
 
 This application is built on the [Android App Framework](https://developer.android.com/), a full-stack mobile/web app framework built with Java language.
