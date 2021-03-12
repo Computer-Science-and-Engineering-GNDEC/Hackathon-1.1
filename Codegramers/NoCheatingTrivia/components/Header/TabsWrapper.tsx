@@ -41,7 +41,7 @@ const renderTabBar = (props: any) => {
   return <DefaultTabBar {...props} />;
 };
 
-export const TabsWrapper = ({navigation}: any) => {
+export const TabsWrapper = ({navigation, count}: any) => {
   // console.log('navigation in Tabs Wrapper', navigation);
   const [state, setState] = useState({
     data: null,
@@ -70,7 +70,7 @@ export const TabsWrapper = ({navigation}: any) => {
                 <Text style={{color: '#000'}}>Active</Text>
               </TabHeading>
             }>
-            <Text>Hey There</Text>
+            <Text>count: {count}</Text>
           </Tab>
           <Tab
             heading={

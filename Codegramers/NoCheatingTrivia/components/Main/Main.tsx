@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
-import {Text, View} from 'react-native';
-import { useCheating } from '../../helpers/useCheating';
+import React, {useRef, useState} from 'react';
+import {Dimensions, Text, View} from 'react-native';
+import {useCheating} from '../../helpers/useCheating';
 import {TabsWrapper} from '../Header/TabsWrapper';
 // import {MainFooter} from './Footer/MainFooter';
 
@@ -12,15 +12,26 @@ export default function Main({navigation}: any) {
    * 3 -> Profile
    */
   const [counter, setCounter] = useState(0);
+  const window = useRef(Dimensions.get('window'));
+  const screen = useRef(Dimensions.get('screen'));
 
-  const [cheating, setCheating] = useCheating(false);
+  const [cheatingCount, setCheatingCount] = useState(0);
+  const [cheating, res] = useCheating({
+    count: cheatingCount,
+    setCount: setCheatingCount,
+    window: window.current,
+    screen: screen.current,
+  });
+
+  console.log(res);
+
   return (
     // Flex-1 to take all available height
     <>
       <View style={{flex: 1}}>
         <View style={{flex: 1}}>
           {counter === 0 ? (
-            <TabsWrapper navigation={navigation} />
+            <TabsWrapper count={cheatingCount} navigation={navigation} />
           ) : counter === 1 ? (
             <Text>Player</Text>
           ) : counter === 2 ? (
