@@ -1,4 +1,4 @@
-# Progress Starts
+# Progress Report
 
 
 ## Learning about various aspects to find the solution of problem.
@@ -17,7 +17,7 @@
 
 
 ## Workflow
-- Frontend finished except dashboard
+- Frontend finished
 - Instructors list has been created
 - Course list has been created
 - Employee list has been created
