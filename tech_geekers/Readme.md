@@ -48,6 +48,7 @@ This application is built on the [Android App Framework](https://developer.andro
     2. He/She may not be able to close, minimize or change the size of window screen
     3. Only WiFi and mobile data can be turned on, no other options such as Bluetooth etc can be turned on.
     4. Calls and Notifications will be blocked.
+    
     • After login the user will be directed to the main page where exam can be conductes.
     • Only the the services provided by exam brach will appear on the screen of device such as question papers, calcualtors, log tables, etc
     • A portal for teacher for uploading question papers and to provide other tools required for exam such as calculator.
