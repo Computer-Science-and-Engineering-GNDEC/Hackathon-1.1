@@ -42,7 +42,7 @@ In about Us webpage, there is a sidebar having:
 [My account](https://a8cc6b3e27bb.ngrok.io/me)
 - [FAQ](https://a8cc6b3e27bb.ngrok.io/faq) section
 - [Contact Us](https://a8cc6b3e27bb.ngrok.io/contact) Section in which address and phone numbers is there.
-- [Ask Queries]9https://a8cc6b3e27bb.ngrok.io/gndec-queries) section where user can post his/her queries regarding college.
+- [Ask Queries](https://a8cc6b3e27bb.ngrok.io/gndec-queries) section where user can post his/her queries regarding college.
 <!--- ldap login to the user along with guest login.-->
 
 
