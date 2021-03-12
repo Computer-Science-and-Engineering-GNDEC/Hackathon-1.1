@@ -1,0 +1,221 @@
+/*!
+ /       .                             .o8                     oooo
+ /    .o8                             "888                     `888
+ /  .o888oo oooo d8b oooo  oooo   .oooo888   .ooooo.   .oooo.o  888  oooo
+ /    888   `888""8P `888  `888  d88' `888  d88' `88b d88(  "8  888 .8P'
+ /    888    888      888   888  888   888  888ooo888 `"Y88b.   888888.
+ /    888 .  888      888   888  888   888  888    .o o.  )88b  888 `88b.
+ /    "888" d888b     `V88V"V8P' `Y8bod88P" `Y8bod8P' 8""888P' o888o o888o
+ /  ========================================================================
+ /  Author:     Chris Brame
+ /  Updated:    1/20/19 5:31 AM
+ /  Copyright (c) 2014-2019. All rights reserved.
+ /
+
+#loader-wrapper,
+#dot-loader
+  background: $page_content_bg
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  width: 100%
+  height: 100%
+  z-index: 999999
+
+@keyframes bigdotbounce
+  0%
+    -webkit-transform: translateY(0%)
+  50%
+    -webkit-transform: translateY(-150%)
+  100%
+    -webkit-transform: translateY(0%)
+
+@keyframes bounceC
+  0%
+    -webkit-transform: translateY(0%)
+    -moz-transform: translateY(0%)
+  50%
+    -webkit-transform: translateY(-100%)
+    -moz-transform: translateY(-80%)
+  100%
+    -webkit-transform: translateY(0%)
+    -moz-transform: translateY(0%)
+
+@keyframes bounce
+  0%
+    -webkit-transform: scaleY(0.6) translateY(50%)
+    -moz-transform: scaleY(0.6) translateY(50%)
+  50%
+    -webkit-transform: scaleY(1.02) translateY(-10%)
+    -moz-transform: scaleY(1.02) translateY(-10%)
+  100%
+    -webkit-transform: scaleY(0.7) translateY(40%)
+    -moz-transform: scaleY(0.7) translateY(40%)
+
+.t path
+  animation: bounce .7s infinite alternate ease-in-out
+  -webkit-animation: bounce .7s infinite alternate ease-in-out
+
+.t circle
+  -webkit-animation: bounceC .7s infinite alternate ease-in-out
+
+.bigdot circle
+  animation: bigdotbounce .7s infinite alternate ease-in-out
+  -webkit-animation: bigdotbounce .7s infinite alternate ease-in-out
+
+//p
+//  font-family: $fontFamily
+//  font-size: 22px
+//  font-weight: 300
+//  color: white
+
+.test-wrapper
+  width: 280px
+  height: 150px
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+.loader-wrapper,
+.dot-loader-wrapper
+  width: 100%
+  height: 100%
+  svg.t,
+  svg.bigdot
+    position: absolute
+    top: 0
+    left: 30%
+    transform-origin: 0 100%
+    -ms-transform-origin: 0 100%
+    -moz-transform-origin: 13px 100%
+    -webkit-transform-origin: 13px 100%
+    transform: scale(1.5)
+    // transform: translate(2200px, 6400px) scale(256)
+    circle
+      fill: #E74C3C
+    path
+      transform-origin: 50% 100%
+      -ms-transform-origin: 50% 100%
+      -moz-transform-origin: 50% 100%
+      -webkit-transform-origin: 50% 100%
+  svg
+    path
+      fill: #323232
+
+svg.bigdot circle
+  fill: $accent_color !important
+
+.shadow
+  animation: expand .35s infinite alternate ease-in-out
+  -webkit-animation: expand .35s infinite alternate ease-in-out
+
+.shadow-wrapper
+  width: 280px
+  height: 150px
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+@keyframes expand
+  0%
+    opacity: 0.5
+  100%
+    opacity: 0.2
+
+
+
+// Top Preloader
+@function colour($value)
+  @return map-get($colours, $value)
+
+
+// Variables
+$preloader-height: 5px
+
+$colours: (green:  $accent_success, red:    $accent_color, blue:   $accent_blue, yellow: white  )
+
+$animation-duration: 3.5s
+
+header [role="progressbar"][aria-busy="true"]
+  position: absolute
+  top: 0
+  left: 0
+  padding-top: $preloader-height
+  width: 100%
+  background-color: colour(green)
+  z-index: 999
+  animation: preloader-background linear $animation-duration infinite
+
+  &::before,
+  &::after
+    display: block
+    position: absolute
+    top: 0
+    z-index: 2
+    width: 0
+    height: $preloader-height
+    background: #afa
+    animation: preloader-front linear $animation-duration infinite
+    content: ''
+
+  &::before
+    right: 50%
+
+
+  &::after
+    left: 50%
+
+// Animations
+@keyframes preloader-background
+  0%, 24.9%
+    background-color: colour(green)
+
+
+  25%, 49.9%
+    background-color: colour(red)
+
+
+  50%, 74.9%
+    background-color: colour(blue)
+
+
+  75%, 100%
+    background-color: colour(yellow)
+
+@keyframes preloader-front
+  0%
+    width: 0
+    background-color: colour(red)
+
+  24.9%
+    width: 50%
+    background-color: colour(red)
+
+  25%
+    width: 0
+    background-color: colour(blue)
+
+  49.9%
+    width: 50%
+    background-color: colour(blue)
+
+  50%
+    width: 0
+    background-color: colour(yellow)
+
+  74.9%
+    width: 50%
+    background-color: colour(yellow)
+
+  75%
+    width: 0%
+    background-color: colour(green)
+
+  100%
+    width: 50%
+    background-color: colour(green)
+
