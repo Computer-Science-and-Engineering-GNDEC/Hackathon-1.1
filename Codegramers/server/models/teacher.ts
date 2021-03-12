@@ -14,6 +14,12 @@ interface ITeacher extends mongoose.Document {
     }
   ];
   role: string;
+  upcoming?: [
+    {
+      type: mongoose.Schema.Types.ObjectId;
+      ref: 'Exam';
+    }
+  ];
 }
 
 const teacherSchema = new mongoose.Schema<ITeacher>({
@@ -48,6 +54,12 @@ const teacherSchema = new mongoose.Schema<ITeacher>({
     readonly: true,
     default: 'teacher',
   },
+  upcoming: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Exam',
+    },
+  ],
 });
 
 teacherSchema.pre<ITeacher>('save', async function (next) {

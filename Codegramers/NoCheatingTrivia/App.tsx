@@ -8,7 +8,10 @@
  * @format
  */
 
-import React from 'react';
+import {createDrawerNavigator} from '@react-navigation/drawer';
+import {NavigationContainer} from '@react-navigation/native';
+import {createStackNavigator} from '@react-navigation/stack';
+import React, {useEffect, useState} from 'react';
 import {
   SafeAreaView,
   StyleSheet,
@@ -25,53 +28,102 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import Main from './components/Main/Main';
+import {SideBar} from './components/SideBar/SideBar';
+import {SplashScreen} from './components/SplashScreen/SplashScreen';
+import {checkAuth} from './helpers.cheackAuth';
 
 declare const global: {HermesInternal: null | {}};
 
-const App = () => {
+const Stack = createStackNavigator();
+const Drawer = createDrawerNavigator();
+const DrawerNavigation = () => {
   return (
     <>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <ScrollView
-          contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}>
-          <Header />
-          {global.HermesInternal == null ? null : (
-            <View style={styles.engine}>
-              <Text style={styles.footer}>Engine: Hermes</Text>
-            </View>
+      <NavigationContainer>
+        <Drawer.Navigator drawerContent={(props) => <SideBar {...props} />}>
+          {/* Here is where we are combining Stack Navigator to Drawer Navigator */}
+          <Drawer.Screen name="App" component={App} />
+        </Drawer.Navigator>
+      </NavigationContainer>
+    </>
+  );
+};
+
+const App = () => {
+  const [checking, setChecking] = useState({loading: true, auth: false});
+
+  useEffect(() => {
+    // const f = async () => await AsyncStorage.removeItem('radioTangyToken');
+    // f();
+
+    let t;
+    const g = async () => {
+      t = await checkAuth();
+      console.log('whether user authenticated:', t);
+      if (t) setChecking({auth: true, loading: false});
+      else setChecking({auth: false, loading: false});
+    };
+    g();
+  }, []);
+  return (
+    <>
+      {!checking.loading ? (
+        <Stack.Navigator
+        // headerMode='screen'
+        // screenOptions={{
+        //   headerRight: ({ navigation }: any) => <Text>Hello</Text>,
+        // }}
+        >
+          {checking.auth ? (
+            // User Is Signed In
+            <>
+              <Stack.Screen
+                name="Main"
+                component={Main}
+                options={{
+                  headerShown: false,
+                }}
+              />
+              {/* <Stack.Screen
+                name="Profile"
+                component={Profile}
+                options={{
+                  headerShown: false,
+                }}
+              /> */}
+            </>
+          ) : (
+            // User Is Not Signed In
+            <>
+              {/* <Stack.Screen
+                name="Home"
+                component={Home}
+                options={{
+                  headerShown: false,
+                }}
+              />
+              <Stack.Screen
+                name="LoginRegister"
+                component={LoginRegsiter}
+                options={{
+                  headerShown: false,
+                }}
+              />
+              <Stack.Screen
+                name="Login"
+                component={Login}
+                options={{
+                  headerShown: false,
+                }}
+              />  */}
+              <Text>Not signed in!!!</Text>
+            </>
           )}
-          <View style={styles.body}>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Step One</Text>
-              <Text style={styles.sectionDescription}>
-                Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-                screen and then come back to see your edits.
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>See Your Changes</Text>
-              <Text style={styles.sectionDescription}>
-                <ReloadInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Debug</Text>
-              <Text style={styles.sectionDescription}>
-                <DebugInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
-              <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
-              </Text>
-            </View>
-            <LearnMoreLinks />
-          </View>
-        </ScrollView>
-      </SafeAreaView>
+        </Stack.Navigator>
+      ) : (
+        <SplashScreen />
+      )}
     </>
   );
 };
@@ -115,4 +167,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+export default DrawerNavigation;
