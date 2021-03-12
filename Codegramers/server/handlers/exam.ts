@@ -73,6 +73,12 @@ export async function getSpecificExam(
 
     const upcomingExams = await db.Teacher.findById(teacherId, { upcoming: 1 });
 
+    if (upcomingExams === null)
+      return next({
+        status: 400,
+        message: `given teacher does not exist`,
+      });
+
     if (upcomingExams.upcoming.includes(examId)) {
       const exam = await db.Exam.findById(examId, { teachers: 0 });
       return res.status(200).json(exam);
