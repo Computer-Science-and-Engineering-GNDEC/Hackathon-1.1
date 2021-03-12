@@ -21,6 +21,10 @@ We enable user to know more about the college and provided them with college hel
 
 ### PROJECT URL : 
 https://therookies1.uvdesk.com/en/
+   
+   
+   
+  This is our first experience that we participate in such am event " Hackathon1.1". These things are new to us we had never tackle such problems before, but we are glad that we participated in this and learnt alot from this Hackathon. May be our project is not as per the requirements but we tried our best to complete this with our full involvement.
  
  ### CODE:
  Access the source code for the same at project.md
@@ -2921,6 +2925,5 @@ https://therookies1.uvdesk.com/en/
     </body>
 </html>
 
-This is our first experience that we participate in such am event " Hackathon1.1". These things are new to us we had never tackle  such problems before, but we are glad that we participated in this and learnt alot from this Hackathon. May be our project is not as per the requirements but we tried our best to complete this with our full involvement.
 
 
