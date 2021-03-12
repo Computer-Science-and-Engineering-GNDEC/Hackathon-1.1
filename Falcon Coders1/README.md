@@ -1,4 +1,5 @@
-![image](https://user-images.githubusercontent.com/74251229/110917563-0df15f00-8340-11eb-9b7e-78c128d463d4.png)
+![![gne logo (1) (1) (1)](https://user-images.githubusercontent.com/57444962/110919762-9f61d080-8342-11eb-87fe-4872ffb97de9.png)
+
 # [Guru Nanak Dev Engineering College, Helpdesk](https://a8cc6b3e27bb.ngrok.io/)
 
 ## We have used ERPnext software to make our project flexible and editable.
@@ -58,8 +59,8 @@ In About Us webpage, there is a sidebar having:
 
 - [Ask Queries](https://a8cc6b3e27bb.ngrok.io/gndec-queries) section where user can post his/her queries regarding college.
 
-![image](https://user-images.githubusercontent.com/74251229/110918770-873d8180-8341-11eb-93e6-4e7467b2fc44.png)
-<!--- ldap login to the user along with guest login.-->
+![Screenshot 2021-03-12 144135 (1)](https://user-images.githubusercontent.com/57444962/110919841-b6082780-8342-11eb-8274-df4b1fb19810.jpg)
+
 
 
 ## FAQ Section:
