@@ -20,7 +20,6 @@ In about Us webpage, there is a sidebar.
 
 ![image](https://user-images.githubusercontent.com/74251229/110916550-efd72f00-833e-11eb-883d-c602daa70c20.png)
 
-
 [Principal Desk](https://a8cc6b3e27bb.ngrok.io/PrincipalDesk)
 [Administration](https://a8cc6b3e27bb.ngrok.io/administration)
 [History](https://a8cc6b3e27bb.ngrok.io/history)
