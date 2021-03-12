@@ -29,7 +29,7 @@ import {
 import {DrawerActions} from '@react-navigation/native';
 // import LatestSongs from './LatestSongs';
 import axios from 'axios';
-import { MainHeader } from './Mainheader';
+import {MainHeader} from './Mainheader';
 // import FitImage from 'react-native-fit-image';
 // import {MainHeader} from './MainHeader';
 
@@ -48,37 +48,11 @@ export const TabsWrapper = ({navigation}: any) => {
     loading: true,
     error: false,
   });
-  useEffect(() => {
-    axios
-      .get('http://192.168.0.103:8082/api/search/latestSongs')
-      .then((res: any) => {
-        const latestSongs = res.data;
-        // console.log(latestSongs);
-        // if (isMounted.current)
-        setState({
-          data: latestSongs as any,
-          loading: false,
-          error: false,
-        });
-        const t = latestSongs.map((song: any) => song.name);
-
-        console.log(t);
-      })
-      .catch((err: any) => {
-        console.log('error encountered:', err);
-        // if (isMounted.current)
-        setState({
-          data: null,
-          loading: false,
-          error: true,
-        });
-      });
-  }, []);
 
   return (
     <>
       <Container>
-        <MainHeader title="Podcast" navigation={navigation} />
+        <MainHeader title="Home" navigation={navigation} />
         <Tabs
           renderTabBar={renderTabBar}
           tabBarBackgroundColor="#fff"
@@ -93,18 +67,17 @@ export const TabsWrapper = ({navigation}: any) => {
           <Tab
             heading={
               <TabHeading style={{backgroundColor: '#fff'}}>
-                <Text style={{color: '#000'}}>What's Hot</Text>
+                <Text style={{color: '#000'}}>Active</Text>
               </TabHeading>
             }>
-              <Text>Hey There</Text>
+            <Text>Hey There</Text>
           </Tab>
           <Tab
             heading={
               <TabHeading style={{backgroundColor: '#fff'}}>
-                <Text style={{color: '#000'}}>Featured</Text>
+                <Text style={{color: '#000'}}>Calculator</Text>
               </TabHeading>
             }>
-            {/* <Tab3 /> */}
             <Text>Featured Section</Text>
           </Tab>
         </Tabs>
