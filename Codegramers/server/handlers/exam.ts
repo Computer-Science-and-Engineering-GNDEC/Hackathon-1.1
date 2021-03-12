@@ -62,3 +62,28 @@ export async function getUpcomingExmasOfTecher(
     return next(e);
   }
 }
+
+export async function getSpecificExam(
+  req: Request,
+  res: Response,
+  next: NextFunction
+) {
+  try {
+    const { examId, teacherId } = req.params;
+
+    const upcomingExams = await db.Teacher.findById(teacherId, { upcoming: 1 });
+
+    if (upcomingExams.upcoming.includes(examId)) {
+      const exam = await db.Exam.findById(examId, { teachers: 0 });
+      return res.status(200).json(exam);
+    } else {
+      return next({
+        status: 401,
+        message: `this teacher does not permission to view this exam.. please contact admin`,
+      });
+    }
+  } catch (e) {
+    console.log(e);
+    return next(e);
+  }
+}
