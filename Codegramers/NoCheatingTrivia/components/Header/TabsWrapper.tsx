@@ -1,0 +1,129 @@
+declare module 'native-base' {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  export class DefaultTabBar extends React.Component<any, any> {}
+}
+
+import React, {useEffect, useState} from 'react';
+import {
+  Container,
+  Header,
+  Tab,
+  Tabs,
+  TabHeading,
+  Icon,
+  Text,
+  DefaultTabBar,
+  Body,
+  Title,
+  Left,
+  Button,
+} from 'native-base';
+
+// import {BackButton} from './BackButton';
+import {
+  Image,
+  StyleSheet,
+  TouchableOpacity,
+  useWindowDimensions,
+} from 'react-native';
+import {DrawerActions} from '@react-navigation/native';
+// import LatestSongs from './LatestSongs';
+import axios from 'axios';
+import { MainHeader } from './Mainheader';
+// import FitImage from 'react-native-fit-image';
+// import {MainHeader} from './MainHeader';
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const renderTabBar = (props: any) => {
+  props.tabStyle = Object.create(props.tabStyle);
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
+  return <DefaultTabBar {...props} />;
+};
+
+export const TabsWrapper = ({navigation}: any) => {
+  // console.log('navigation in Tabs Wrapper', navigation);
+  const [state, setState] = useState({
+    data: null,
+    loading: true,
+    error: false,
+  });
+  useEffect(() => {
+    axios
+      .get('http://192.168.0.103:8082/api/search/latestSongs')
+      .then((res: any) => {
+        const latestSongs = res.data;
+        // console.log(latestSongs);
+        // if (isMounted.current)
+        setState({
+          data: latestSongs as any,
+          loading: false,
+          error: false,
+        });
+        const t = latestSongs.map((song: any) => song.name);
+
+        console.log(t);
+      })
+      .catch((err: any) => {
+        console.log('error encountered:', err);
+        // if (isMounted.current)
+        setState({
+          data: null,
+          loading: false,
+          error: true,
+        });
+      });
+  }, []);
+
+  return (
+    <>
+      <Container>
+        <MainHeader title="Podcast" navigation={navigation} />
+        <Tabs
+          renderTabBar={renderTabBar}
+          tabBarBackgroundColor="#fff"
+          tabBarActiveTextColor="#000"
+          tabBarInactiveTextColor="#000"
+          tabBarUnderlineStyle={{
+            borderBottomColor: '#FFBC00',
+            borderBottomWidth: 3,
+            marginLeft: 17,
+            width: '25%',
+          }}>
+          <Tab
+            heading={
+              <TabHeading style={{backgroundColor: '#fff'}}>
+                <Text style={{color: '#000'}}>What's Hot</Text>
+              </TabHeading>
+            }>
+              <Text>Hey There</Text>
+          </Tab>
+          <Tab
+            heading={
+              <TabHeading style={{backgroundColor: '#fff'}}>
+                <Text style={{color: '#000'}}>Featured</Text>
+              </TabHeading>
+            }>
+            {/* <Tab3 /> */}
+            <Text>Featured Section</Text>
+          </Tab>
+        </Tabs>
+      </Container>
+    </>
+  );
+};
+
+const styles = StyleSheet.create({
+  drawerButton: {
+    height: 30,
+    // display: 'flex',
+    // flex: 1,
+    // resizeMode: 'contain',
+    width: 30,
+    // paddingLeft: 20,
+  },
+  drawerButtonImage: {
+    // height: 30,
+    // paddingEnd: 15,
+  },
+});
