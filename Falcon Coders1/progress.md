@@ -22,6 +22,7 @@
 - Course list has been created
 - Employee list has been created
 - Issues Form Created
+- Users and permissions settings has been done
 
 
 
