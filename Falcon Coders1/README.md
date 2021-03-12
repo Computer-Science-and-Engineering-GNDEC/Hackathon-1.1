@@ -1,5 +1,4 @@
-![Gne](https://user-images.githubusercontent.com/57444962/110918992-c4a20f00-8341-11eb-82ad-f5316e472ad7.png)
-
+![image](https://user-images.githubusercontent.com/74251229/110917563-0df15f00-8340-11eb-9b7e-78c128d463d4.png)
 # [Guru Nanak Dev Engineering College, Helpdesk](https://a8cc6b3e27bb.ngrok.io/)
 
 ## We have used ERPnext software to make our project flexible and editable.
@@ -15,10 +14,16 @@
 
 
 
+
 ![top bar](https://user-images.githubusercontent.com/74251229/110915881-35dfc300-833e-11eb-8e8b-07cb0fa7a7b7.png)
 
 - [Home](https://a8cc6b3e27bb.ngrok.io/) section having beautiful web page.
+
+![image](https://user-images.githubusercontent.com/74251229/110919096-e00d1a00-8341-11eb-911c-a0706f609f86.png)
+
 - [About Us](https://a8cc6b3e27bb.ngrok.io/about) section having all information with necessary side bar. 
+
+![image](https://user-images.githubusercontent.com/74251229/110919140-ee5b3600-8341-11eb-9818-74b71750373c.png)
 
 In About Us webpage, there is a sidebar having:
 
