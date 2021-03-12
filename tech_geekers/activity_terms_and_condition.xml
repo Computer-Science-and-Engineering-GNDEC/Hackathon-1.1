@@ -1,0 +1,21 @@
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="408dp"
+        android:layout_height="640dp"
+        android:text=" Important guidelines of E-Proctoring while attempting online examination March-April 2021.
+Calling on mobile phones are not allowed.
+No person is allowed to accompany the student.
+Web cam should be switched on all the time.
+Proper lightning should be on the face of student.
+Camera focus should be on the face of student.
+Wearing of earphones/headphones/airpods are not allowed.
+Note: Any violation of above said conduct rules observed during proctoring will be treated as Unfair Means Case (UMC).
+                       "
+        android:textSize="28dp" />
+
+</LinearLayout>
