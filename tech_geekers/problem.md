@@ -1,10 +1,18 @@
+
 # App(Cross Platform) for Examination
 
 - To Create an app for the the conduct of examination in a proctored way.
 ## Features
 
 ## Following Features Need to be implemented and provided
-```
+
+# PWA for Examination
+
+- To Create a Progressive App for the the conduct of examination in a proctored way.
+Features
+
+ ## Following Features Need to be implemented and provided.
+ ```
     Authentication system for making student login using LDAP by taking the following permissions from the user.
 
     After accepting the terms and conditions user will not be able to use any application other than this app
