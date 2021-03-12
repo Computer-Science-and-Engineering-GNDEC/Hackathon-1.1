@@ -59,10 +59,10 @@ export const TabsWrapper = ({navigation}: any) => {
           tabBarActiveTextColor="#000"
           tabBarInactiveTextColor="#000"
           tabBarUnderlineStyle={{
-            borderBottomColor: '#FFBC00',
+            borderBottomColor: 'blue',
             borderBottomWidth: 3,
-            marginLeft: 17,
-            width: '25%',
+            marginLeft: 20,
+            width: '40%',
           }}>
           <Tab
             heading={

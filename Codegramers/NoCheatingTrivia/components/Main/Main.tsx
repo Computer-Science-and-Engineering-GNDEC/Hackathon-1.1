@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {Text, View} from 'react-native';
+import { useCheating } from '../../helpers/useCheating';
 import {TabsWrapper} from '../Header/TabsWrapper';
 // import {MainFooter} from './Footer/MainFooter';
 
@@ -12,6 +13,7 @@ export default function Main({navigation}: any) {
    */
   const [counter, setCounter] = useState(0);
 
+  const [cheating, setCheating] = useCheating(false);
   return (
     // Flex-1 to take all available height
     <>
