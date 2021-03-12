@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:background="@drawable/strokes"
+        tools:context=".MainActivity">
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/google"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            app:buttonSize="icon_only"
+            tools:layout_editor_absoluteX="-16dp"
+            tools:layout_editor_absoluteY="338dp">
+
+
+        </com.google.android.gms.common.SignInButton>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:text="First Test Your Web Camera Then Move Furthur"
+            android:textAllCaps="false"
+            android:textColor="@color/yellow"
+            android:textSize="30dp"
+            android:background="@drawable/round_edges"
+            android:id="@+id/web"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnn"
+            android:text="Bluetooth"
+            android:src="@drawable/ic_baseline_bluetooth_24"
+
+            android:textSize="25dp"
+
+            android:textColor="@color/red"
+            android:layout_marginTop="30dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/wifi"
+            android:textSize="25dp"
+            android:textColor="@color/green"
+            android:text="Check internet connection"
+            android:layout_marginTop="30dp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="130dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:id="@+id/addUpload">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@color/green"
+                        android:src="@drawable/ic_baseline_photo_camera_24"
+                        android:padding="15dp"
+                        ></ImageView>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Capture Image Before Start Exam"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/red"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="130dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:id="@+id/addGroup">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@color/gr"
+                        android:src="@drawable/ic_baseline_groups_24"
+                        android:padding="15dp"
+                        ></ImageView>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Teacher's Portal"
+
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/red"
+                        />
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="bLOCK ALL NOTIFICATION"
+            android:id="@+id/block"/>
+
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About-Team_Geekers"
+            android:textAllCaps="false"
+            android:id="@+id/gee"/>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+
