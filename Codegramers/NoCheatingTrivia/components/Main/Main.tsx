@@ -1,5 +1,5 @@
 import React, {useRef, useState} from 'react';
-import {Dimensions, Text, View} from 'react-native';
+import {Alert, Dimensions, Text, View} from 'react-native';
 import {useCheating} from '../../helpers/useCheating';
 import {TabsWrapper} from '../Header/TabsWrapper';
 // import {MainFooter} from './Footer/MainFooter';
@@ -16,7 +16,7 @@ export default function Main({navigation}: any) {
   const screen = useRef(Dimensions.get('screen'));
 
   const [cheatingCount, setCheatingCount] = useState(0);
-  const [cheating, res] = useCheating({
+  const [warning, res] = useCheating({
     count: cheatingCount,
     setCount: setCheatingCount,
     window: window.current,
@@ -47,6 +47,8 @@ export default function Main({navigation}: any) {
           counter={counter}
           setCounter={setCounter}
         /> */}
+
+        {warning ? Alert.alert("you've been found cheating") : <Text>"</Text>}
       </View>
     </>
   );

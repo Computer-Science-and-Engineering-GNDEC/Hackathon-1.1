@@ -1,5 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react';
-import {AppState, Dimensions, ScaledSize} from 'react-native';
+import {AppState, Dimensions, Platform, ScaledSize} from 'react-native';
 import {useBluetoothStatus} from 'react-native-bluetooth-status';
 
 interface Props {
@@ -24,6 +24,8 @@ export const useCheating = ({
 
   const appState = useRef(AppState.currentState);
 
+  console.log('line 27', AppState.currentState);
+
   const [appStateVisible, setAppStateVisible] = useState(appState.current);
   const [btStatus, isPending, setBluetooth] = useBluetoothStatus();
 
@@ -46,18 +48,36 @@ export const useCheating = ({
     }
   };
 
+  /* when the user pulls down the notification drawer */
+  const _handleBlurEvent = (a_state: any) => {
+    console.log('on blur', appState.current);
+
+    console.log('blur state', a_state);
+  };
+
   /* Check whether App is in background */
   useEffect(() => {
     AppState.addEventListener('change', _handleAppStateChange);
 
+    if (Platform.OS === 'android') {
+      console.log('platform is android');
+      AppState.addEventListener('blur', _handleBlurEvent);
+    }
+
     return () => {
       AppState.removeEventListener('change', _handleAppStateChange);
+
+      if (Platform.OS === 'android') {
+        console.log('platform is android');
+
+        AppState.removeEventListener('blur', _handleBlurEvent);
+      }
     };
   }, []);
 
   /* check bluetooth active or not */
   useEffect(() => {
-    if (!isPending) {
+    if (!isPending && btStatus) {
       setWatch({
         watching: false,
         variant: count >= 3 ? 'exit' : 'warning',
@@ -99,7 +119,8 @@ export const useCheating = ({
       setCount((c) => c + 1);
     }
   };
+
   const detail = {variant: watch.variant, detail: watch.detail};
   const startWatch = () => setWatch((w) => ({...w, watching: true}));
-  return [appStateVisible, detail, startWatch];
+  return [detail.variant, detail, startWatch];
 };
