@@ -9,3 +9,11 @@
 
 
 
+## EXTRA
+ - Dynamic paging
+ - Profile view
+ - Branchwise view
+ - Quetion view
+ - Answer View 
+ - Answering Page ( Only for HOD,teacher)
+ - Forwarding Page( Only for HOD)
