@@ -11,7 +11,7 @@
 - HoD can also forward the query to the concerned teacher.
 
 ## Frontend Website is having: 
-![image](https://user-images.githubusercontent.com/74251229/110918770-873d8180-8341-11eb-93e6-4e7467b2fc44.png)
+
 
 
 ![top bar](https://user-images.githubusercontent.com/74251229/110915881-35dfc300-833e-11eb-8e8b-07cb0fa7a7b7.png)
@@ -45,6 +45,7 @@ In About Us webpage, there is a sidebar having:
 - [FAQ](https://a8cc6b3e27bb.ngrok.io/faq) section
 - [Contact Us](https://a8cc6b3e27bb.ngrok.io/contact) Section in which address and phone numbers is there.
 - [Ask Queries](https://a8cc6b3e27bb.ngrok.io/gndec-queries) section where user can post his/her queries regarding college.
+![image](https://user-images.githubusercontent.com/74251229/110918770-873d8180-8341-11eb-93e6-4e7467b2fc44.png)
 <!--- ldap login to the user along with guest login.-->
 
 
