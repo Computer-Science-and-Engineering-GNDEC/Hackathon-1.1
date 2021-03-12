@@ -1,0 +1,30 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="E-mail : googlydhiman.4236@gmail.com
+                          Branch : Information Technology
+                          CRN/URN : 1921116/1905415
+                          Area of Interest : Android development
+                          Link of Git Repository : https://github.com/THINKandroid01"
+            android:textSize="40dp"/>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
+
