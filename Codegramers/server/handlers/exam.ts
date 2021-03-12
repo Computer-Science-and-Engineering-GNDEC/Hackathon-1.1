@@ -30,7 +30,9 @@ export async function addExam(req: Request, res: Response, next: NextFunction) {
     const newExam = await db.Exam.create(req.body);
     console.log(newExam);
 
-    // await db.Teacher
+    const currentTeacher = await db.Teacher.findById(teachers[0]);
+    currentTeacher.upcoming.push(newExam._id);
+    currentTeacher.save();
 
     return res.status(200).json(newExam);
   } catch (e) {
@@ -39,7 +41,6 @@ export async function addExam(req: Request, res: Response, next: NextFunction) {
   }
 }
 
-
 export async function getUpcomingExmasOfTecher(
   req: Request,
   res: Response,
@@ -47,6 +48,6 @@ export async function getUpcomingExmasOfTecher(
 ) {
   const { teacherId } = req.params;
 
-  // const exams = 
+  // const exams =
   console.log(teacherId);
 }
