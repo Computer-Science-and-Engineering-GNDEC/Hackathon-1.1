@@ -1,4 +1,5 @@
-![image](https://user-images.githubusercontent.com/74251229/110917563-0df15f00-8340-11eb-9b7e-78c128d463d4.png)
+![Gne](https://user-images.githubusercontent.com/57444962/110918992-c4a20f00-8341-11eb-82ad-f5316e472ad7.png)
+
 # [Guru Nanak Dev Engineering College, Helpdesk](https://a8cc6b3e27bb.ngrok.io/)
 
 ## We have used ERPnext software to make our project flexible and editable.
