@@ -24,8 +24,6 @@ export const useCheating = ({
 
   const appState = useRef(AppState.currentState);
 
-  console.log('line 27', AppState.currentState);
-
   const [appStateVisible, setAppStateVisible] = useState(appState.current);
   const [btStatus, isPending, setBluetooth] = useBluetoothStatus();
 
@@ -37,11 +35,14 @@ export const useCheating = ({
     window: ScaledSize;
     screen: ScaledSize;
   }) => {
-    if (window !== originalScreen || screen !== originalScreen) {
+    if (
+      window !== originalWindow ||
+      (screen !== originalScreen && watch.watching)
+    ) {
       setWatch({
         watching: false,
         variant: count >= 3 ? 'exit' : 'warning',
-        detail: 'Bluetooth was turned on!',
+        detail: 'Screen size changed!',
         cheating: true,
       });
       setCount((c) => c + 1);
@@ -57,10 +58,11 @@ export const useCheating = ({
 
   /* Check whether App is in background */
   useEffect(() => {
-    AppState.addEventListener('change', _handleAppStateChange);
+    if (watch.watching)
+      AppState.addEventListener('change', _handleAppStateChange);
 
     if (Platform.OS === 'android') {
-      console.log('platform is android');
+      // console.log('platform is android');
       AppState.addEventListener('blur', _handleBlurEvent);
     }
 
@@ -77,7 +79,7 @@ export const useCheating = ({
 
   /* check bluetooth active or not */
   useEffect(() => {
-    if (!isPending && btStatus) {
+    if (!isPending && btStatus && watch.watching) {
       setWatch({
         watching: false,
         variant: count >= 3 ? 'exit' : 'warning',
@@ -91,7 +93,8 @@ export const useCheating = ({
 
   /* If user tries to change size of window */
   useEffect(() => {
-    Dimensions.addEventListener('change', onDimentionsChanged);
+    if (watch.watching)
+      Dimensions.addEventListener('change', onDimentionsChanged);
     return () => {
       Dimensions.removeEventListener('change', onDimentionsChanged);
     };
@@ -109,7 +112,7 @@ export const useCheating = ({
     setAppStateVisible(appState.current);
     console.log('AppState', appState.current);
 
-    if (appState.current === 'background') {
+    if (appState.current === 'background' && watch.watching) {
       setWatch({
         watching: false,
         variant: count >= 3 ? 'exit' : 'warning',
@@ -121,6 +124,8 @@ export const useCheating = ({
   };
 
   const detail = {variant: watch.variant, detail: watch.detail};
-  const startWatch = () => setWatch((w) => ({...w, watching: true}));
-  return [detail.variant, detail, startWatch];
+  const reason: string = watch.detail;
+  const startWatch = () =>
+    setWatch((w) => ({...w, watching: true, variant: '', detail: ''}));
+  return [detail.variant, reason, startWatch];
 };

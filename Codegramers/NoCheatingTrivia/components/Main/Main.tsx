@@ -16,14 +16,19 @@ export default function Main({navigation}: any) {
   const screen = useRef(Dimensions.get('screen'));
 
   const [cheatingCount, setCheatingCount] = useState(0);
-  const [warning, res] = useCheating({
+  const [warning, reason, startWatch] = useCheating({
     count: cheatingCount,
     setCount: setCheatingCount,
     window: window.current,
     screen: screen.current,
   });
 
-  console.log(res);
+  //   const d: {
+  //     variant: string;
+  //     detail: string;
+  // } = res
+
+  // console.log(res);
 
   return (
     // Flex-1 to take all available height
@@ -48,7 +53,20 @@ export default function Main({navigation}: any) {
           setCounter={setCounter}
         /> */}
 
-        {warning ? Alert.alert("you've been found cheating") : <Text>"</Text>}
+        {warning ? (
+          Alert.alert(
+            cheatingCount >= 3 ? 'Note' : 'Warning',
+            `${reason.toString()}\nYou will be disqualified if this continues`,
+            [
+              {
+                text: cheatingCount >= 3 ? 'OK' : 'Dismiss',
+                onPress: () => (startWatch as any)(),
+              },
+            ],
+          )
+        ) : (
+          <Text>"</Text>
+        )}
       </View>
     </>
   );
