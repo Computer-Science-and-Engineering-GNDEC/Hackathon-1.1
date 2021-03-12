@@ -44,11 +44,10 @@ In about Us webpage, there is a sidebar having:
 - Contact Us Section in which address and phone numbers is there.
 - Ask Queries section where user can post his/her queries regarding college.
 <!--- ldap login to the user along with guest login.-->
-- Accessed by every user(Students, Professors, HOD'S, Administrator) by given Username and Password.
+- Accessed by every user(Students, Professors, HOD'S, Administrator).
 
 ## FAQ Section:
-- It consists of Frequently Asked Questions that can be put up by Admin or HOD's by adding HTML code as Website module very easily.
-P.S. We are looking forward to automate this.
+- It consists of Frequently Asked Questions that can be put up by Admin or HOD's by using Website module very easily.
 
 ## Desk:
 After Login, only teachers and HOD's can access some specific modules related to their fields as we have set permission in this way. They can keep record of their courses, schedule, programmes, etc.
