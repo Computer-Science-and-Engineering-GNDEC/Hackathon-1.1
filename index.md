@@ -37,6 +37,7 @@ It’s a 48 hours event starting on March 10, 2021 at 3PM and ending on March 12
 
 ### Join inaugural fuction at [google meet](https://meet.google.com/jou-swso-aak) on March 10, 2021 at 3 PM.
 
+## The hackathon 1.1 ended now, the time of presentation will be announced soon, stay connected.
 
 
 More information will be display soon.
