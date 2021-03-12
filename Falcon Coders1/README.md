@@ -40,11 +40,11 @@ In about Us webpage, there is a sidebar having:
 [Balance Sheets](https://www.gndec.ac.in/?q=node/344)
 
 [My account](https://a8cc6b3e27bb.ngrok.io/me)
-- FAQ section 
-- Contact Us Section in which address and phone numbers is there.
-- Ask Queries section where user can post his/her queries regarding college.
+- [FAQ](https://a8cc6b3e27bb.ngrok.io/faq) section
+- [Contact Us](https://a8cc6b3e27bb.ngrok.io/contact) Section in which address and phone numbers is there.
+- [Ask Queries]9https://a8cc6b3e27bb.ngrok.io/gndec-queries) section where user can post his/her queries regarding college.
 <!--- ldap login to the user along with guest login.-->
-- Accessed by every user(Students, Professors, HOD'S, Administrator).
+
 
 ## FAQ Section:
 - It consists of Frequently Asked Questions that can be put up by Admin or HOD's by using Website module very easily.
