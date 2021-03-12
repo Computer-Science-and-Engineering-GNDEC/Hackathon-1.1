@@ -17,9 +17,7 @@
 - [Home section having beautiful web page.](https://a8cc6b3e27bb.ngrok.io/)
 - [About Us section having all information with necessary side bar. ](https://a8cc6b3e27bb.ngrok.io/about)
 
-In about Us webpage, there is a sidebar.
-
-![image](https://user-images.githubusercontent.com/74251229/110916550-efd72f00-833e-11eb-883d-c602daa70c20.png)
+In about Us webpage, there is a sidebar having:
 
 [Principal Desk](https://a8cc6b3e27bb.ngrok.io/PrincipalDesk)
 
