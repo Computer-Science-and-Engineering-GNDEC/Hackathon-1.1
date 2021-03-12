@@ -9,6 +9,7 @@
 - Authorized person of concerned department can forward the query to concerned person and HoD can see all the queries raised to their department.
 - HoD can also forward the query to the concerned teacher.
 
+<!----
 ## Frontend Website is having: 
 
 - Home section having beautiful web page. 
@@ -16,7 +17,6 @@
 - About Us section having all information with necessary side bar. 
 - FAQ section 
 - Ask Queries section where user can post his/her queries regarding college.
-- Previous asked queries section where they can see previously asked queries.
 <!--- ldap login to the user along with guest login.-->
 - Accessed by every user(Students, Professors, HOD'S, Administrator) by given Username and Password.
 
@@ -30,3 +30,4 @@ After Login, only teachers and HOD's can access some specific modules related to
 ## Queries: 
 In support module, at issues, HOD's can see the queries that are being entered by students and they can assign the task to solve the queries to some other person also.
 User permissions can be set accordingly so that particular query would be visible to particular person only.
+--- >
