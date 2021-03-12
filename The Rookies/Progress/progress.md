@@ -26,7 +26,7 @@ https://therookies1.uvdesk.com/en/
    
   This is our first experience that we participate in such am event " Hackathon1.1". These things are new to us we had never tackle such problems before, but we are glad that we participated in this and learnt alot from this Hackathon. May be our project is not as per the requirements but we tried our best to complete this with our full involvement.
  
- Along with this we are asking our server credentials from GNDEC from day 1 but they sent our credentials last midnight and due to which we are not able to connect this with server as it take time but we got our login id late night only but still we tried our best till end.
+ Along with this we are asking our server credentials from GNDEC from day 1 but they sent our credentials last midnight and due to which we are not able to connect this with server as it take time as we got our login id late night only but still we tried our best till end.
  ### CODE:
  Access the source code for the same at project.md
  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
