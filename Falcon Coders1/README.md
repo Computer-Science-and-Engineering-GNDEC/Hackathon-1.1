@@ -12,6 +12,7 @@
 ## Frontend Website is having: 
 
 - Home section having beautiful web page. 
+
 - About Us section having all information with necessary side bar. 
 - FAQ section 
 - Ask Queries section where user can post his/her queries regarding college.
