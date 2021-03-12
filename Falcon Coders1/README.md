@@ -14,10 +14,10 @@
 
 ![top bar](https://user-images.githubusercontent.com/74251229/110915881-35dfc300-833e-11eb-8e8b-07cb0fa7a7b7.png)
 
-- [Home section having beautiful web page.](https://a8cc6b3e27bb.ngrok.io/)
-- [About Us section having all information with necessary side bar. ](https://a8cc6b3e27bb.ngrok.io/about)
+- [Home](https://a8cc6b3e27bb.ngrok.io/) section having beautiful web page.
+- [About Us](https://a8cc6b3e27bb.ngrok.io/about) section having all information with necessary side bar. 
 
-In about Us webpage, there is a sidebar having:
+In About Us webpage, there is a sidebar having:
 
 [Principal Desk](https://a8cc6b3e27bb.ngrok.io/PrincipalDesk)
 
