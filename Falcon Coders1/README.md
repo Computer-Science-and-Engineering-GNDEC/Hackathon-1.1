@@ -18,16 +18,17 @@
 
 - We have created a help desk which allows the user to post his/her queries regarding college.
 
-
-
+<br>
+<br>
 ![image](https://user-images.githubusercontent.com/74251229/110900584-f8bd0600-8328-11eb-82d0-35c89b46f3be.png)
 
-
+<br>
+<br>
 
 ![image](https://user-images.githubusercontent.com/74251229/110900610-070b2200-8329-11eb-89e1-380a89101f04.png)
 
-
-
+<br>
+<br>
 
 - Help desk has an admin panel where the admin can see all the queries raised by the users.
 - Authorized person of concerned department can forward the query to concerned person and HoD can see all the queries raised to their department.
