@@ -1,4 +1,4 @@
-![![gne logo (1) (1) (1)](https://user-images.githubusercontent.com/57444962/110919762-9f61d080-8342-11eb-87fe-4872ffb97de9.png)
+![gne logo (1) (1) (1)](https://user-images.githubusercontent.com/57444962/110919762-9f61d080-8342-11eb-87fe-4872ffb97de9.png)
 
 # [Guru Nanak Dev Engineering College, Helpdesk](https://a8cc6b3e27bb.ngrok.io/)
 
