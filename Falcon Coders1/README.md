@@ -52,11 +52,11 @@ In About Us webpage, there is a sidebar having:
 [My account](https://a8cc6b3e27bb.ngrok.io/me)
 - [FAQ](https://a8cc6b3e27bb.ngrok.io/faq) section
 
-- ![Uploading image.png…]()
+
 
 - [Contact Us](https://a8cc6b3e27bb.ngrok.io/contact) Section in which address and phone numbers is there.
 
-![Uploading image.png…]()
+
 
 - [Ask Queries](https://a8cc6b3e27bb.ngrok.io/gndec-queries) section where user can post his/her queries regarding college.
 
