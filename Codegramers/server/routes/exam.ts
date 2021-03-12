@@ -1,7 +1,7 @@
 import express from 'express';
-import { addExam } from '../handlers/exam';
+import { addExam, getUpcomingExmasOfTecher } from '../handlers/exam';
 const router = express.Router();
 
 /* prefixed with `exams` */
-router.post('/', addExam);
+router.post('/', addExam).get('/teacher/:teacherId', getUpcomingExmasOfTecher);
 export default router;
