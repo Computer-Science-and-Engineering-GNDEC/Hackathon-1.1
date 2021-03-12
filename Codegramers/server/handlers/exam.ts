@@ -46,8 +46,19 @@ export async function getUpcomingExmasOfTecher(
   res: Response,
   next: NextFunction
 ) {
-  const { teacherId } = req.params;
+  try {
+    const { teacherId } = req.params;
 
-  // const exams =
-  console.log(teacherId);
+    if (!teacherId)
+      return next({
+        status: 400,
+        message: 'no teacher ID provided for fetching upcoming exams',
+      });
+
+    const upcomingExams = await db.Teacher.findById(teacherId, { upcoming: 1 });
+    res.status(200).json(upcomingExams);
+  } catch (e) {
+    console.log(e);
+    return next(e);
+  }
 }
