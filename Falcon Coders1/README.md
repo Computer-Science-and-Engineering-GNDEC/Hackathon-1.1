@@ -9,7 +9,7 @@
 - Authorized person of concerned department can forward the query to concerned person and HoD can see all the queries raised to their department.
 - HoD can also forward the query to the concerned teacher.
 
-<!----
+<!---
 ## Frontend Website is having: 
 
 - Home section having beautiful web page. 
@@ -30,4 +30,4 @@ After Login, only teachers and HOD's can access some specific modules related to
 ## Queries: 
 In support module, at issues, HOD's can see the queries that are being entered by students and they can assign the task to solve the queries to some other person also.
 User permissions can be set accordingly so that particular query would be visible to particular person only.
---- >
+--->
