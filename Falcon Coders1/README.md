@@ -14,12 +14,14 @@
 <br>
 
 ![image](https://user-images.githubusercontent.com/74251229/110900472-cf03df00-8328-11eb-96fb-30de82215d01.png)
-
+<br>
+<br>
 
 - We have created a help desk which allows the user to post his/her queries regarding college.
 
 <br>
 <br>
+
 ![image](https://user-images.githubusercontent.com/74251229/110900584-f8bd0600-8328-11eb-82d0-35c89b46f3be.png)
 
 <br>
