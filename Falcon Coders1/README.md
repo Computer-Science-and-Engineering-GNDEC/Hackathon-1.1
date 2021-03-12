@@ -5,12 +5,11 @@
 
 ## The features of our software HelpDesk of Guru Nanak Dev Engineering College are:
 - Beautiful Frontend
-
-
-
+<br>
+<br>
 ![image](https://user-images.githubusercontent.com/74251229/110900337-9c59e680-8328-11eb-82aa-4395598429e6.png)
-
-
+<br>
+<br>
 
 ![image](https://user-images.githubusercontent.com/74251229/110900472-cf03df00-8328-11eb-96fb-30de82215d01.png)
 
