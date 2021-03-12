@@ -10,11 +10,11 @@ We enable user to know more about the college and provided them with college hel
 
 3)The help desk should have an admin panel where the admin can see all the queries rased by the users (at backend service we can see the quiries at admin panel).
 
-4) Authorized person of concerned department forward the query to concerned person and HoD can see all the queries raised to their department
+4)Authorized person of concerned department forward the query to concerned person and HoD can see all the queries raised to their department
 
-5) HoD can also forward the query to the concerned teacher.
+5)HoD can also forward the query to the concerned teacher.
 
-6) All the queries and their solutions will not be directly posted to fornt page of the Helpdesk only the queries approved by HOD or admin will be posted as FAQ on help desk portal at backened.
+6)All the queries and their solutions will not be directly posted to fornt page of the Helpdesk only the queries approved by HOD or admin will be posted as FAQ on help desk portal at backened.
 
 7)Confirmation mail is sent to the users of their enquiry.
 
