@@ -20,7 +20,8 @@
 
 - [Home](https://a8cc6b3e27bb.ngrok.io/) section having beautiful web page.
 
-![image](https://user-images.githubusercontent.com/74251229/110919096-e00d1a00-8341-11eb-911c-a0706f609f86.png)
+![Screenshot 2021-03-12 121354](https://user-images.githubusercontent.com/57444962/110920119-05e6ee80-8343-11eb-9a6d-29178bf58622.jpg)
+
 
 - [About Us](https://a8cc6b3e27bb.ngrok.io/about) section having all information with necessary side bar. 
 
