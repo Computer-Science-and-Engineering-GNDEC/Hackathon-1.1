@@ -41,7 +41,7 @@ const renderTabBar = (props: any) => {
   return <DefaultTabBar {...props} />;
 };
 
-export const TabsWrapper = ({navigation}: any) => {
+export const TabsWrapper = ({navigation, count}: any) => {
   // console.log('navigation in Tabs Wrapper', navigation);
   const [state, setState] = useState({
     data: null,
@@ -59,10 +59,10 @@ export const TabsWrapper = ({navigation}: any) => {
           tabBarActiveTextColor="#000"
           tabBarInactiveTextColor="#000"
           tabBarUnderlineStyle={{
-            borderBottomColor: '#FFBC00',
+            borderBottomColor: 'blue',
             borderBottomWidth: 3,
-            marginLeft: 17,
-            width: '25%',
+            marginLeft: 20,
+            width: '40%',
           }}>
           <Tab
             heading={
@@ -70,7 +70,7 @@ export const TabsWrapper = ({navigation}: any) => {
                 <Text style={{color: '#000'}}>Active</Text>
               </TabHeading>
             }>
-            <Text>Hey There</Text>
+            <Text>count: {count}</Text>
           </Tab>
           <Tab
             heading={
