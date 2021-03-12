@@ -1,3 +1,11 @@
+
+# Install LDAP
+- installing apache
+- Mysql
+- php(lamp)
+
+- We will added sigin intrigation to our application.
+
 # <i>Following progress has been made in the hackathon task:
   
  <h2> Install ldap server.</h2>

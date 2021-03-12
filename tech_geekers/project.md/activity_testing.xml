@@ -1,0 +1,41 @@
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/yellow"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <WebView
+            android:id="@+id/joke"
+            android:layout_width="match_parent"
+            android:layout_height="552dp" />
+
+        <Button
+            android:id="@+id/reddy"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:text="open test"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="24dp"
+            android:src="@drawable/ic_baseline_calculate_24"
+            android:backgroundTint="@color/red"
+            android:id="@+id/cal"
+            android:layout_height="wrap_content"
+            >
+
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
