@@ -15,18 +15,23 @@
 
 - [Home section having beautiful web page.](https://a8cc6b3e27bb.ngrok.io/)
 - [About Us section having all information with necessary side bar. ](https://a8cc6b3e27bb.ngrok.io/about)
+
 In about Us webpage, there is a sidebar.
+
 ![image](https://user-images.githubusercontent.com/74251229/110916550-efd72f00-833e-11eb-883d-c602daa70c20.png)
-[Principal Desk]
-[Administration]
-[History]
-[Mission]
-[Vision]
-[Campus]
-[Code of Professional Ethics]
-[Green Audit Report]
-[Annual Report]
-[Balance Sheets]
+
+
+[Principal Desk](https://a8cc6b3e27bb.ngrok.io/PrincipalDesk)
+[Administration](https://a8cc6b3e27bb.ngrok.io/administration)
+[History](https://a8cc6b3e27bb.ngrok.io/history)
+[Mission](https://a8cc6b3e27bb.ngrok.io/mission)
+[Vision](https://a8cc6b3e27bb.ngrok.io/vision)
+[Campus](https://a8cc6b3e27bb.ngrok.io/campus)
+[Code of Professional Ethics](https://gndec.ac.in/sites/default/files/cope7_1.pdf)
+[Green Audit Report](https://gndec.ac.in/sites/default/files/gar.pdf)
+[Annual Report](https://gndec.ac.in/sites/default/files/annual%20reports.pdf)
+[Balance Sheets](https://www.gndec.ac.in/?q=node/344)
+[My account](https://a8cc6b3e27bb.ngrok.io/me)
 - FAQ section 
 - Contact Us Section in which address and phone numbers is there.
 - Ask Queries section where user can post his/her queries regarding college.
