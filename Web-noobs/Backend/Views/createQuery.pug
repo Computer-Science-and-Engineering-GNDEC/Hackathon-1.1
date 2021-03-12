@@ -1,0 +1,27 @@
+extends base
+block content
+    h1.headerBlue.heading-primary   
+        a.homepage(href='/').span.heading-primary--main#headName Ask Queries 
+    
+    .meri-heading
+        .book__form
+          form.form-create(action='#')
+            .u-margin-bottom-medium
+                
+            // .tagline
+            .form__group
+                input#Eventname.form__input(type='text' placeholder='Title' required='')
+                label.form__label(for='name') TITLE
+            .form__group
+                input#Eventduration.form__input(type='text' placeholder='Query' required='')
+                label.form__label(for='duration') Query
+            .form__group
+                input#Eventteam.form__input(type='text' placeholder='Branch' required='')
+                label.form__label(for='team') Branch
+            .form__group
+                input#Eventprice.form__input(type='text' placeholder='Tags' required='')
+                label.form__label(for='Price') Tags 
+            .form__group
+                button.btn.btn--green Post Query &rarr;
+    
+                    

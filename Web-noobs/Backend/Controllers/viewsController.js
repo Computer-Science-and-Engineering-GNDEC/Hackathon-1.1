@@ -63,6 +63,12 @@ exports.moreQueries = catchAsync(async (req, res, next) => {
   });
 });
 
+exports.createQuery = catchAsync(async (req, res) => {
+  res.status(200).render("createQuery", {
+    title: "Post a query",
+  });
+});
+
 exports.manageUser = catchAsync(async (req, res) => {
   const users = await (await User.find({ role: "user" })).sort();
   res.status(200).render("manageUsers", {

@@ -20,7 +20,7 @@ const createSendToken = (user, statusCode, req, res) => {
       Date.now() + process.env.JWT_COOKIE_EXPIRES_IN * 24 * 60 * 60 * 1000
     ),
     httpOnly: true,
-    secure: req.secure || req.headers("x-forwarded-proto") === "https",
+    // secure: req.secure || req.headers("x-forwarded-proto") === "https",
   });
   //Remove the password from the output
   user.password = undefined;
@@ -104,9 +104,10 @@ exports.protect = catchAsync(async (req, res, next) => {
     req.headers.authorization.startsWith("Bearer")
   ) {
     token = req.headers.authorization.split(" ")[1];
-  } else if (req.cookies.jwt) {
-    token = req.cookies.jwt;
   }
+  //  else if (req.cookies.jwt) {
+  //   token = req.cookies.jwt;
+  // }
   if (!token) {
     return next(
       new AppError("You are not loggen in.Please login to access this", 401)

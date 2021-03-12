@@ -6,7 +6,7 @@ export const createNewQuery = async (title, query, branch, tags) => {
   try {
     const res = await axios({
       method: "POST",
-      url: "/api/v1/events",
+      url: "/api/v1/queries",
       data: {
         title,
         query,

@@ -20,6 +20,12 @@ router.get("/me", authController.protect, viewsController.getMe);
 router.get("/more-events", viewsController.moreQueries);
 
 router.get(
+  "/createQuery",
+  authController.isLoggedIn,
+  viewsController.createQuery
+);
+
+router.get(
   "/deleteEvent-admin",
   authController.isLoggedIn,
   viewsController.deleteQueryAdmin
