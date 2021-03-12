@@ -5,13 +5,27 @@
 
 ## The features of our software HelpDesk of Guru Nanak Dev Engineering College are:
 - Beautiful Frontend
+
+
+
 ![image](https://user-images.githubusercontent.com/74251229/110900337-9c59e680-8328-11eb-82aa-4395598429e6.png)
+
+
+
 ![image](https://user-images.githubusercontent.com/74251229/110900472-cf03df00-8328-11eb-96fb-30de82215d01.png)
 
 
 - We have created a help desk which allows the user to post his/her queries regarding college.
+
+
+
 ![image](https://user-images.githubusercontent.com/74251229/110900584-f8bd0600-8328-11eb-82d0-35c89b46f3be.png)
+
+
+
 ![image](https://user-images.githubusercontent.com/74251229/110900610-070b2200-8329-11eb-89e1-380a89101f04.png)
+
+
 
 
 - Help desk has an admin panel where the admin can see all the queries raised by the users.
