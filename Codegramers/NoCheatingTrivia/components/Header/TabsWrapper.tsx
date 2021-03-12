@@ -30,6 +30,7 @@ import {DrawerActions} from '@react-navigation/native';
 // import LatestSongs from './LatestSongs';
 import axios from 'axios';
 import {MainHeader} from './Mainheader';
+import Test from '../Main/Test';
 // import FitImage from 'react-native-fit-image';
 // import {MainHeader} from './MainHeader';
 
@@ -70,7 +71,7 @@ export const TabsWrapper = ({navigation, count}: any) => {
                 <Text style={{color: '#000'}}>Active</Text>
               </TabHeading>
             }>
-            <Text>count: {count}</Text>
+            <Test />
           </Tab>
           <Tab
             heading={

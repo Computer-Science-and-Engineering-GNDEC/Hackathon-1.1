@@ -53,20 +53,23 @@ export default function Main({navigation}: any) {
           setCounter={setCounter}
         /> */}
 
-        {warning ? (
+        {/* {warning ? (
           Alert.alert(
             cheatingCount >= 3 ? 'Note' : 'Warning',
             `${reason.toString()}\nYou will be disqualified if this continues`,
             [
               {
                 text: cheatingCount >= 3 ? 'OK' : 'Dismiss',
-                onPress: () => (startWatch as any)(),
+                onPress: () => {
+                  (startWatch as any)();
+                  setCounter(0);
+                },
               },
             ],
           )
         ) : (
           <Text>"</Text>
-        )}
+        )} */}
       </View>
     </>
   );
