@@ -15,7 +15,18 @@
 
 - [Home section having beautiful web page.](https://a8cc6b3e27bb.ngrok.io/)
 - [About Us section having all information with necessary side bar. ](https://a8cc6b3e27bb.ngrok.io/about)
-- 
+In about Us webpage, there is a sidebar.
+![image](https://user-images.githubusercontent.com/74251229/110916550-efd72f00-833e-11eb-883d-c602daa70c20.png)
+[Principal Desk]
+[Administration]
+[History]
+[Mission]
+[Vision]
+[Campus]
+[Code of Professional Ethics]
+[Green Audit Report]
+[Annual Report]
+[Balance Sheets]
 - FAQ section 
 - Contact Us Section in which address and phone numbers is there.
 - Ask Queries section where user can post his/her queries regarding college.
