@@ -73,3 +73,6 @@ After Login, only teachers and HOD's can access some specific modules related to
 ## Queries: 
 In support module, at issues, HOD's can see the queries that are being entered by students and they can assign the task to solve the queries to some other person also.
 User permissions can be set accordingly so that particular query would be visible to particular person only.
+
+![queries](https://user-images.githubusercontent.com/57444962/110920401-5a8a6980-8343-11eb-80b7-c2edcad6887c.jpg)
+
