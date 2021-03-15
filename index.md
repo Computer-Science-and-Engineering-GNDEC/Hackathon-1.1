@@ -37,6 +37,5 @@ It’s a 48 hours event starting on March 10, 2021 at 3PM and ending on March 12
 
 ## Presentations for Hackathon 1.1 will start on March 13, 2021 at 10:15AM. Book you slot at [google sheet](https://docs.google.com/spreadsheets/d/1AaSzA6x9gpfBxFDvoFc64i5cd8Av31kHWxRkMDAk-2A/edit?usp=sharing) Join [google meet](https://meet.google.com/jou-swso-aak) for presentation.
 
-## [Result](https://computer-science-and-engineering-gndec.github.io/Hackathon-1.1/result.html)
 
 
