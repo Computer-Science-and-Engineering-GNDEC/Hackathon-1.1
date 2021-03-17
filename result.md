@@ -1,4 +1,4 @@
-Congratulations to all teams for being a part of Hackathon1.1. We are happy to announce the winners of the Hackathon1.1
+Congratulations to all teams for being a part of Hackathon1.1, we are happy to announce the winners of the Hackathon1.1
 
 First Position: Tech Geekers 
 
