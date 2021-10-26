@@ -33,4 +33,4 @@
 - Branch : Information Technology
 - CRN/URN : 1921116/1905415
 - Area of Interest : Android development
-- Link of Git Repository : https://github.com/THINKandroid01
+- Link of Git Repository : https://github.com/DHIMANvivek
